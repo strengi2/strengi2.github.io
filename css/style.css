@@ -1,5 +1,5 @@
 body {
-  background-color: gray;
+  background-color: green;
 }
 
 h1 {
@@ -14,11 +14,28 @@ p {
 }
 div {
   margin: auto;
-  width: 20%;
+  width: 16%;
+  left: 10%;
 }
-
 button {
    text-align: center;
 }
-
-
+body {
+  background-image: url("https://wallpaperaccess.com/full/6302751.jpg");
+  background-color: #ffffff;
+}
+ol {
+  color: green;
+  border: 5px solid powderblue;
+  background-color: hotpink;
+}
+ul{
+   margin: auto;
+   width: 50%;
+}
+p1{
+  background-color:red
+}
+table {
+  background-color:red
+}
