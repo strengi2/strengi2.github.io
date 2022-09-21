@@ -1,0 +1,25 @@
+body {
+  background-image: url("https://3.bp.blogspot.com/-CBkeyJkASJY/XFUltC8eOEI/AAAAAAAABz0/Dlf9jd3RMPQKSz_G63SgYDiC53NmYNdywCKgBGAs/w2560-h1440-c/night-sky-stars-scenery-landscape-21-4K.jpg");
+}
+
+h1 {
+ color: white;
+}
+
+h2 {
+ color: white;
+}
+
+p {
+ color: white;
+}
+
+ul{
+ color: white;	
+}
+header {
+  width: 300px;
+  border: 15px solid green;
+  padding: 50px;
+  margin: 20px;
+}
