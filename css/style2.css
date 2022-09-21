@@ -3,12 +3,18 @@ body {
   
 }
 img {
-  border-radius: 50%;
+  border-radius: 320px;
 }
 
 header {
  color: white;
  text-align: center;
+ margin: 20;
+ background-color: black;
+ padding-buttom: 50px;
+ padding-top: 80px;
+ font-family: 'Diplomata';
+ font-size: 40px;
 }
 
 h2 {
