@@ -3,7 +3,6 @@ body {
   
 }
 img {
-  border-radius: 320px;
   
 }
 
@@ -18,10 +17,19 @@ header {
  font-size: 49px;
 }
 
+#main1 {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  border-radius: 320px;
+  width: 500px;
+}
+
 h2 {
  color: white;
  font-family: 'Concert One';
- font-size: 30px;
+ font-size: 47px;
 }
 
 p {
@@ -30,12 +38,15 @@ p {
  font-size: 20px;
 }
 
+#main2 {
+  
+  position: center;
+  left: 1300px;
+  border: 7px solid black;
+
+}
+
 ul{
  color: white;	
 }
-header {
-  margin: 0;
-}
-div {
 
-}
