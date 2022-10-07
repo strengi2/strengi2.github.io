@@ -1,7 +1,40 @@
 .box {
 background-color: #007fff;
-width: 400px;
-padding: 50px;
-border: solid 20px black;
 box-sizing: border-box;
+padding: 20px 70px 50px 10px;
+padding-top: 20px;
+padding-right: 40px;
+padding-buttom: 100px;
+padding-left: 30px;
+margin: 40px;
+border: 10px dashed black;
+border-top: solid 20px black;
+border-top-width: 30px;
+border-top-color: red; 
+}
+
+h2{
+background-color: red;
+color: #007fff;
+}
+
+.box1 {
+background-color: #007fff;
+box-sizing: border-box;
+padding: 20px 70px 50px 10px;
+padding-top: 20px;
+padding-right: 40px;
+padding-buttom: 100px;
+padding-left: 30px;
+margin: 40px;
+padding: 30;
+margin: 0 auto;
+
+}
+
+h1{
+font-size: 40px;
+background-color: red;
+Margin: -80px 0 0 -30px;
+
 }
