@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <h1>Ur age is: </h1>
+    <h3 id="customInput"> u are  too young</h3>
+   
+
+    <script>
+
+
+
+        var age = prompt("ur age is?")
+        age = Number(age);
+        if(age) {
+            
+        if(age >= 18){
+            var h3Node = document.getElementById("customInput");
+            h3Node.innerText = age, toLowerCase();
+        }else {
+        }
+
+    }
+
+
+    </script>
+
+
+
+</body>
+</html>
