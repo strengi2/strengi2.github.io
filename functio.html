@@ -8,8 +8,14 @@
 </head>
 <body>
     
-    <h1> tämä funktio tulostaa tietoni konsoliin</h1>
+    
+    <h2> Functions</h2>
 
+    <p>functionsss:
+    </p>
+    
+    <p id="demo"></p>
+    
     <script>
     
         function greeting(name="Oskari", age="17") {
@@ -17,7 +23,14 @@
             console.log("age is " + age);
     
             return "name";
-    
+
+
+            function myFunction(p1, p2) {
+             return p1 * p2;
+                }
+            document.getElementById("demo").innerHTML = myFunction(4, 3);
+      
+
         }
 
         var defaultName = greeting()    
