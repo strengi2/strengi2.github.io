@@ -1,0 +1,99 @@
+
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+body{
+  height:49vh;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  font-family: 'Roboto', sans-serif;
+
+  
+  background-color: black;
+  font-family: Verdana, sans-serif;
+  font-size: 20px;
+  color: black;
+  
+  background: rgb(252,176,69);
+  background: linear-gradient(90deg, rgba(252,176,69,1) 0%, rgba(253,29,29,1) 50%, rgba(131,58,180,1) 100%);
+}
+
+h2{
+  margin:0px;
+  text-transform: uppercase;
+}
+
+h6{
+  margin:0px;
+  color:rgb(0, 0, 0);
+}
+
+.wrapper{
+  text-align:center;
+  margin:50px auto;
+  font-size: 60px;
+}
+
+.tabs{
+  position: absolute;
+  margin-top:40px;
+  font-size:15px;
+  padding:0px;
+  list-style:none;
+  background:#fff;
+  box-shadow:0px 5px 20px rgba(0,0,0,0.1);
+  display:inline-block;
+  border-radius:50px;
+  position:relative;
+}
+
+.tabs a{
+ position: absolute;
+  text-decoration:none;
+  color: #777;
+  text-transform:uppercase;
+  padding:10px 20px;
+  display:inline-block;
+  position:relative;
+  z-index:1;
+  transition-duration:0.6s;
+  
+}
+
+.tabs a.active{
+  color:#fff;
+  position: absolute;
+}
+
+.tabs a i{
+  margin-right:5px;
+  position: absolute;
+}
+
+.tabs .selector{
+  height:100%;
+  display:inline-block;
+  position:absolute;
+  left:0px;
+  top:0px;
+  z-index:1;
+  border-radius:50px;
+  transition-duration:0.6s;
+  transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+
+  background: #05abe0;
+  background: -moz-linear-gradient(45deg, #05abe0 0%, #8200f4 100%);
+  background: -webkit-linear-gradient(45deg, #05abe0 0%,#8200f4 100%);
+  background: linear-gradient(45deg, #05abe0 0%,#8200f4 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#05abe0', endColorstr='#8200f4',GradientType=1 );
+}
+
+h1 {
+    font-family:  "Courier New", monospace;
+}
+
+p {
+    font-family: "Lucida Console", "Courier New", monospace;
+
+}
