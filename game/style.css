@@ -1,0 +1,17 @@
+#gameArea {
+    border:25px solid rgb(167, 13, 13);
+  }
+
+  body {
+    height: 100vh;
+    background: linear-gradient(
+      0deg,
+      rgb(230, 65, 65) 0%,
+      rgb(57, 76, 248) 100%
+    );
+    text-align: center;
+    
+  }
+  h1 {
+    font-family: Comic Sans MS;
+  }
