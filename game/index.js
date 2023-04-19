@@ -3,8 +3,8 @@ const ctx = canvas.getContext("2d");
 
 let x = 100;
 let y = 100;
-let radius = 50;
-let speed = 10;
+let radius = 35;
+let speed = 4;
 
 let upPressed = false;
 let downPressed = false;
