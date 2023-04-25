@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+<img src="https://www.topgear.com/sites/default/files/2021/09/210914-01_002-source.jpg?w=892&h=502" width="400px" height="auto">
+
+
+<p id="malli"></p>
+
+    <input id="button" type="submit" name="button" onclick="myFunction();" value="Malli"/>
+
+    <input id="button" type="submit" name="button" onclick="myFunction1();" value="hevosvoimat"/>
+    
+<h id="hp"></p>
+
+    <script>
+    function myFunction(){
+        document.getElementById("malli").innerHTML = object.malli;
+    };  
+
+    function myFunction1(){
+        document.getElementById("hp").innerHTML = object.hevosvoima;
+    };   
+
+    </script>
+
+
+<script>
+var gtr35 = new Object();
+var object = new Object();
+
+object.hevosvoima = "545hp";
+object.malli = "Nissan GTR R35"
+
+
+
+
+</script>
+
+</body>
+</html>
