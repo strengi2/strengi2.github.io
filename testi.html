@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <button onclick="myFunction()">nabbi</button>
+
+    <p id="demo"></p>
+
+
+    <script>
+function myFunction() {
+ 
+
+class Person {
+    constructor(name, age, food) {
+        this.name = name
+        this.age = Number(age)
+        this.food = food
+    }
+
+    makeSound() {
+        document.getElementById("demo").innerHTML = (
+            this.name + //kalob
+             "  tykkään  "
+              + this.food //pizza
+               )
+    }
+}
+
+
+const kalob = new Person("Minä", 30, "pizzasta")
+const nathan = new Person("Nathan", 30, "pizzasta")
+
+kalob.makeSound()
+
+}
+
+    </script>
+
+</body>
+</html>
