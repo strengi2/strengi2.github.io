@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+
+
+/* Popup container - can be anything you want */
+.popup {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  color: white;
+}
+
+/* The actual popup */
+.popup .popuptext {
+  visibility: hidden;
+  width: 160px;
+  background-color: rgb(134, 133, 133);
+  color: rgb(0, 0, 0);
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -80px;
+}
+
+/* Popup arrow */
+.popup .popuptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+/* Toggle this class - hide and show the popup */
+.popup .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;} 
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+}
+
+
+
+
+
+
+        body {
+            text-align: center;
+            background-color: black;
+
+        }
+        h1{
+            text-align: center;
+            color: white;
+        }
+        p1 {
+            text-align: center;
+            color:white;
+        }
+        img {
+            color:white;
+            width: 25%;
+        }
+        p {
+            color:white;
+            text-align: right;
+        }
+        p2 {
+            color: white;
+        }
+     
+    </style>
+</head>
+
+<body>
+    
+
+
+
+<h1>Ohjelmistokehitys</h1>
+
+<p1>Ohjelmistokehityksessä käytetään useita erikieliä.</p1>
+<br><br><br>
+<img src="https://www.tieturi.fi/wp-content/uploads/2021/12/wcag-1221.jpg">
+
+<br>
+
+
+
+<body style="text-align:center">
+    
+      
+    <div class="popup" onclick="myFunction()">html
+      <span class="popuptext" id="myPopup">Olen opetellut jonkin aikaa html koodia. Osaan ihan hyvin html koodia.</span>
+    </div>
+    
+    <script>
+    // When the user clicks on div, open the popup
+    function myFunction() {
+      var popup = document.getElementById("myPopup");
+      popup.classList.toggle("show");
+    }
+    </script>
+
+    <br>
+
+    <br> <br> <br>
+    <p1> javascript <br>JavaScript on alun perin Netscapen kehittämä, pääasiassa verkkoympäristössä käytettävä ohjelmointikieli.    
+        JavaScript on dynaamisesti ja heikosti tyypitetty, tulkattava, oliopohjainen komentosarjakieli, jonka syntaksi perustuu löyhästi C-ohjelmointikieleen. <br> Kielen semantiikka ja suunnittelu on saanut vaikutteita Self- ja Scheme-ohjelmointikielistä.<br> javascript on koodikieli jota olen vähän opetellut</p1>
+
+<br> <br> <br>
+    <p2>Css <br> css on koodikieli jota käytetään nettisivujen tyylin muokkaamiseen. <br> Olen itse käyttänyt sitä jonkunverran ja hallitsen ihan hyvin sen.</p2>
+    <br> <br> <br>
+
+    <p1>Python <br> Python on koodikieli jota olen testannut enkä osaa sitä hirveen hyvin.</p1>
+    <br> <br> <br>
+    <p1> Lua <br> Lua koodikieletä olen jonkin verran käyttänyt ja osaan sitä ihan hyvin</p1>
+</body>
+</html>
