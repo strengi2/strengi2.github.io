@@ -1,0 +1,1040 @@
+
+<!-- saved from url=(0030)https://koodariksi.fi/alkeet/2 -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style id="ace-github">.ace-github .ace_gutter {background: #e8e8e8;color: #AAA;}.ace-github  {background: #fff;color: #000;}.ace-github .ace_keyword {font-weight: bold;}.ace-github .ace_string {color: #D14;}.ace-github .ace_variable.ace_class {color: teal;}.ace-github .ace_constant.ace_numeric {color: #099;}.ace-github .ace_constant.ace_buildin {color: #0086B3;}.ace-github .ace_support.ace_function {color: #0086B3;}.ace-github .ace_comment {color: #998;font-style: italic;}.ace-github .ace_variable.ace_language  {color: #0086B3;}.ace-github .ace_paren {font-weight: bold;}.ace-github .ace_boolean {font-weight: bold;}.ace-github .ace_string.ace_regexp {color: #009926;font-weight: normal;}.ace-github .ace_variable.ace_instance {color: teal;}.ace-github .ace_constant.ace_language {font-weight: bold;}.ace-github .ace_cursor {color: black;}.ace-github.ace_focus .ace_marker-layer .ace_active-line {background: rgb(255, 255, 204);}.ace-github .ace_marker-layer .ace_active-line {background: rgb(245, 245, 245);}.ace-github .ace_marker-layer .ace_selection {background: rgb(181, 213, 255);}.ace-github.ace_multiselect .ace_selection.ace_start {box-shadow: 0 0 3px 0px white;}.ace-github.ace_nobold .ace_line > span {font-weight: normal !important;}.ace-github .ace_marker-layer .ace_step {background: rgb(252, 255, 0);}.ace-github .ace_marker-layer .ace_stack {background: rgb(164, 229, 101);}.ace-github .ace_marker-layer .ace_bracket {margin: -1px 0 0 -1px;border: 1px solid rgb(192, 192, 192);}.ace-github .ace_gutter-active-line {background-color : rgba(0, 0, 0, 0.07);}.ace-github .ace_marker-layer .ace_selected-word {background: rgb(250, 250, 255);border: 1px solid rgb(200, 200, 250);}.ace-github .ace_invisible {color: #BFBFBF}.ace-github .ace_print-margin {width: 1px;background: #e8e8e8;}.ace-github .ace_indent-guide {background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAACCAYAAACZgbYnAAAAE0lEQVQImWP4////f4bLly//BwAmVgd1/w11/gAAAABJRU5ErkJggg==") right repeat-y;}
+/*# sourceURL=ace/css/ace-github */</style><style>    .error_widget_wrapper {        background: inherit;        color: inherit;        border:none    }    .error_widget {        border-top: solid 2px;        border-bottom: solid 2px;        margin: 5px 0;        padding: 10px 40px;        white-space: pre-wrap;    }    .error_widget.ace_error, .error_widget_arrow.ace_error{        border-color: #ff5a5a    }    .error_widget.ace_warning, .error_widget_arrow.ace_warning{        border-color: #F1D817    }    .error_widget.ace_info, .error_widget_arrow.ace_info{        border-color: #5a5a5a    }    .error_widget.ace_ok, .error_widget_arrow.ace_ok{        border-color: #5aaa5a    }    .error_widget_arrow {        position: absolute;        border: solid 5px;        border-top-color: transparent!important;        border-right-color: transparent!important;        border-left-color: transparent!important;        top: -5px;    }</style><style id="ace-tm">.ace-tm .ace_gutter {background: #f0f0f0;color: #333;}.ace-tm .ace_print-margin {width: 1px;background: #e8e8e8;}.ace-tm .ace_fold {background-color: #6B72E6;}.ace-tm {background-color: #FFFFFF;color: black;}.ace-tm .ace_cursor {color: black;}.ace-tm .ace_invisible {color: rgb(191, 191, 191);}.ace-tm .ace_storage,.ace-tm .ace_keyword {color: blue;}.ace-tm .ace_constant {color: rgb(197, 6, 11);}.ace-tm .ace_constant.ace_buildin {color: rgb(88, 72, 246);}.ace-tm .ace_constant.ace_language {color: rgb(88, 92, 246);}.ace-tm .ace_constant.ace_library {color: rgb(6, 150, 14);}.ace-tm .ace_invalid {background-color: rgba(255, 0, 0, 0.1);color: red;}.ace-tm .ace_support.ace_function {color: rgb(60, 76, 114);}.ace-tm .ace_support.ace_constant {color: rgb(6, 150, 14);}.ace-tm .ace_support.ace_type,.ace-tm .ace_support.ace_class {color: rgb(109, 121, 222);}.ace-tm .ace_keyword.ace_operator {color: rgb(104, 118, 135);}.ace-tm .ace_string {color: rgb(3, 106, 7);}.ace-tm .ace_comment {color: rgb(76, 136, 107);}.ace-tm .ace_comment.ace_doc {color: rgb(0, 102, 255);}.ace-tm .ace_comment.ace_doc.ace_tag {color: rgb(128, 159, 191);}.ace-tm .ace_constant.ace_numeric {color: rgb(0, 0, 205);}.ace-tm .ace_variable {color: rgb(49, 132, 149);}.ace-tm .ace_xml-pe {color: rgb(104, 104, 91);}.ace-tm .ace_entity.ace_name.ace_function {color: #0000A2;}.ace-tm .ace_heading {color: rgb(12, 7, 255);}.ace-tm .ace_list {color:rgb(185, 6, 144);}.ace-tm .ace_meta.ace_tag {color:rgb(0, 22, 142);}.ace-tm .ace_string.ace_regex {color: rgb(255, 0, 0)}.ace-tm .ace_marker-layer .ace_selection {background: rgb(181, 213, 255);}.ace-tm.ace_multiselect .ace_selection.ace_start {box-shadow: 0 0 3px 0px white;}.ace-tm .ace_marker-layer .ace_step {background: rgb(252, 255, 0);}.ace-tm .ace_marker-layer .ace_stack {background: rgb(164, 229, 101);}.ace-tm .ace_marker-layer .ace_bracket {margin: -1px 0 0 -1px;border: 1px solid rgb(192, 192, 192);}.ace-tm .ace_marker-layer .ace_active-line {background: rgba(0, 0, 0, 0.07);}.ace-tm .ace_gutter-active-line {background-color : #dcdcdc;}.ace-tm .ace_marker-layer .ace_selected-word {background: rgb(250, 250, 255);border: 1px solid rgb(200, 200, 250);}.ace-tm .ace_indent-guide {background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAACCAYAAACZgbYnAAAAE0lEQVQImWP4////f4bLly//BwAmVgd1/w11/gAAAABJRU5ErkJggg==") right repeat-y;}
+/*# sourceURL=ace/css/ace-tm */</style><style id="ace_editor.css">.ace_br1 {border-top-left-radius    : 3px;}.ace_br2 {border-top-right-radius   : 3px;}.ace_br3 {border-top-left-radius    : 3px; border-top-right-radius:    3px;}.ace_br4 {border-bottom-right-radius: 3px;}.ace_br5 {border-top-left-radius    : 3px; border-bottom-right-radius: 3px;}.ace_br6 {border-top-right-radius   : 3px; border-bottom-right-radius: 3px;}.ace_br7 {border-top-left-radius    : 3px; border-top-right-radius:    3px; border-bottom-right-radius: 3px;}.ace_br8 {border-bottom-left-radius : 3px;}.ace_br9 {border-top-left-radius    : 3px; border-bottom-left-radius:  3px;}.ace_br10{border-top-right-radius   : 3px; border-bottom-left-radius:  3px;}.ace_br11{border-top-left-radius    : 3px; border-top-right-radius:    3px; border-bottom-left-radius:  3px;}.ace_br12{border-bottom-right-radius: 3px; border-bottom-left-radius:  3px;}.ace_br13{border-top-left-radius    : 3px; border-bottom-right-radius: 3px; border-bottom-left-radius:  3px;}.ace_br14{border-top-right-radius   : 3px; border-bottom-right-radius: 3px; border-bottom-left-radius:  3px;}.ace_br15{border-top-left-radius    : 3px; border-top-right-radius:    3px; border-bottom-right-radius: 3px; border-bottom-left-radius: 3px;}.ace_editor {position: relative;overflow: hidden;font: 12px/normal 'Monaco', 'Menlo', 'Ubuntu Mono', 'Consolas', 'source-code-pro', monospace;direction: ltr;text-align: left;-webkit-tap-highlight-color: rgba(0, 0, 0, 0);}.ace_scroller {position: absolute;overflow: hidden;top: 0;bottom: 0;background-color: inherit;-ms-user-select: none;-moz-user-select: none;-webkit-user-select: none;user-select: none;cursor: text;}.ace_content {position: absolute;box-sizing: border-box;min-width: 100%;contain: style size layout;}.ace_dragging .ace_scroller:before{position: absolute;top: 0;left: 0;right: 0;bottom: 0;content: '';background: rgba(250, 250, 250, 0.01);z-index: 1000;}.ace_dragging.ace_dark .ace_scroller:before{background: rgba(0, 0, 0, 0.01);}.ace_selecting, .ace_selecting * {cursor: text !important;}.ace_gutter {position: absolute;overflow : hidden;width: auto;top: 0;bottom: 0;left: 0;cursor: default;z-index: 4;-ms-user-select: none;-moz-user-select: none;-webkit-user-select: none;user-select: none;contain: style size layout;}.ace_gutter-active-line {position: absolute;left: 0;right: 0;}.ace_scroller.ace_scroll-left {box-shadow: 17px 0 16px -16px rgba(0, 0, 0, 0.4) inset;}.ace_gutter-cell {position: absolute;top: 0;left: 0;right: 0;padding-left: 19px;padding-right: 6px;background-repeat: no-repeat;}.ace_gutter-cell.ace_error {background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAABOFBMVEX/////////QRswFAb/Ui4wFAYwFAYwFAaWGAfDRymzOSH/PxswFAb/SiUwFAYwFAbUPRvjQiDllog5HhHdRybsTi3/Tyv9Tir+Syj/UC3////XurebMBIwFAb/RSHbPx/gUzfdwL3kzMivKBAwFAbbvbnhPx66NhowFAYwFAaZJg8wFAaxKBDZurf/RB6mMxb/SCMwFAYwFAbxQB3+RB4wFAb/Qhy4Oh+4QifbNRcwFAYwFAYwFAb/QRzdNhgwFAYwFAbav7v/Uy7oaE68MBK5LxLewr/r2NXewLswFAaxJw4wFAbkPRy2PyYwFAaxKhLm1tMwFAazPiQwFAaUGAb/QBrfOx3bvrv/VC/maE4wFAbRPBq6MRO8Qynew8Dp2tjfwb0wFAbx6eju5+by6uns4uH9/f36+vr/GkHjAAAAYnRSTlMAGt+64rnWu/bo8eAA4InH3+DwoN7j4eLi4xP99Nfg4+b+/u9B/eDs1MD1mO7+4PHg2MXa347g7vDizMLN4eG+Pv7i5evs/v79yu7S3/DV7/498Yv24eH+4ufQ3Ozu/v7+y13sRqwAAADLSURBVHjaZc/XDsFgGIBhtDrshlitmk2IrbHFqL2pvXf/+78DPokj7+Fz9qpU/9UXJIlhmPaTaQ6QPaz0mm+5gwkgovcV6GZzd5JtCQwgsxoHOvJO15kleRLAnMgHFIESUEPmawB9ngmelTtipwwfASilxOLyiV5UVUyVAfbG0cCPHig+GBkzAENHS0AstVF6bacZIOzgLmxsHbt2OecNgJC83JERmePUYq8ARGkJx6XtFsdddBQgZE2nPR6CICZhawjA4Fb/chv+399kfR+MMMDGOQAAAABJRU5ErkJggg==");background-repeat: no-repeat;background-position: 2px center;}.ace_gutter-cell.ace_warning {background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAAmVBMVEX///8AAAD///8AAAAAAABPSzb/5sAAAAB/blH/73z/ulkAAAAAAAD85pkAAAAAAAACAgP/vGz/rkDerGbGrV7/pkQICAf////e0IsAAAD/oED/qTvhrnUAAAD/yHD/njcAAADuv2r/nz//oTj/p064oGf/zHAAAAA9Nir/tFIAAAD/tlTiuWf/tkIAAACynXEAAAAAAAAtIRW7zBpBAAAAM3RSTlMAABR1m7RXO8Ln31Z36zT+neXe5OzooRDfn+TZ4p3h2hTf4t3k3ucyrN1K5+Xaks52Sfs9CXgrAAAAjklEQVR42o3PbQ+CIBQFYEwboPhSYgoYunIqqLn6/z8uYdH8Vmdnu9vz4WwXgN/xTPRD2+sgOcZjsge/whXZgUaYYvT8QnuJaUrjrHUQreGczuEafQCO/SJTufTbroWsPgsllVhq3wJEk2jUSzX3CUEDJC84707djRc5MTAQxoLgupWRwW6UB5fS++NV8AbOZgnsC7BpEAAAAABJRU5ErkJggg==");background-position: 2px center;}.ace_gutter-cell.ace_info {background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAAAAAA6mKC9AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAAJ0Uk5TAAB2k804AAAAPklEQVQY02NgIB68QuO3tiLznjAwpKTgNyDbMegwisCHZUETUZV0ZqOquBpXj2rtnpSJT1AEnnRmL2OgGgAAIKkRQap2htgAAAAASUVORK5CYII=");background-position: 2px center;}.ace_dark .ace_gutter-cell.ace_info {background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQBAMAAADt3eJSAAAAJFBMVEUAAAChoaGAgIAqKiq+vr6tra1ZWVmUlJSbm5s8PDxubm56enrdgzg3AAAAAXRSTlMAQObYZgAAAClJREFUeNpjYMAPdsMYHegyJZFQBlsUlMFVCWUYKkAZMxZAGdxlDMQBAG+TBP4B6RyJAAAAAElFTkSuQmCC");}.ace_scrollbar {contain: strict;position: absolute;right: 0;bottom: 0;z-index: 6;}.ace_scrollbar-inner {position: absolute;cursor: text;left: 0;top: 0;}.ace_scrollbar-v{overflow-x: hidden;overflow-y: scroll;top: 0;}.ace_scrollbar-h {overflow-x: scroll;overflow-y: hidden;left: 0;}.ace_print-margin {position: absolute;height: 100%;}.ace_text-input {position: absolute;z-index: 0;width: 0.5em;height: 1em;opacity: 0;background: transparent;-moz-appearance: none;appearance: none;border: none;resize: none;outline: none;overflow: hidden;font: inherit;padding: 0 1px;margin: 0 -1px;contain: strict;-ms-user-select: text;-moz-user-select: text;-webkit-user-select: text;user-select: text;white-space: pre!important;}.ace_text-input.ace_composition {background: transparent;color: inherit;z-index: 1000;opacity: 1;}.ace_composition_placeholder { color: transparent }.ace_composition_marker { border-bottom: 1px solid;position: absolute;border-radius: 0;margin-top: 1px;}[ace_nocontext=true] {transform: none!important;filter: none!important;perspective: none!important;clip-path: none!important;mask : none!important;contain: none!important;perspective: none!important;mix-blend-mode: initial!important;z-index: auto;}.ace_layer {z-index: 1;position: absolute;overflow: hidden;word-wrap: normal;white-space: pre;height: 100%;width: 100%;box-sizing: border-box;pointer-events: none;}.ace_gutter-layer {position: relative;width: auto;text-align: right;pointer-events: auto;height: 1000000px;contain: style size layout;}.ace_text-layer {font: inherit !important;position: absolute;height: 1000000px;width: 1000000px;contain: style size layout;}.ace_text-layer > .ace_line, .ace_text-layer > .ace_line_group {contain: style size layout;position: absolute;top: 0;left: 0;right: 0;}.ace_hidpi .ace_text-layer,.ace_hidpi .ace_gutter-layer,.ace_hidpi .ace_content,.ace_hidpi .ace_gutter {contain: strict;will-change: transform;}.ace_hidpi .ace_text-layer > .ace_line, .ace_hidpi .ace_text-layer > .ace_line_group {contain: strict;}.ace_cjk {display: inline-block;text-align: center;}.ace_cursor-layer {z-index: 4;}.ace_cursor {z-index: 4;position: absolute;box-sizing: border-box;border-left: 2px solid;transform: translatez(0);}.ace_multiselect .ace_cursor {border-left-width: 1px;}.ace_slim-cursors .ace_cursor {border-left-width: 1px;}.ace_overwrite-cursors .ace_cursor {border-left-width: 0;border-bottom: 1px solid;}.ace_hidden-cursors .ace_cursor {opacity: 0.2;}.ace_smooth-blinking .ace_cursor {transition: opacity 0.18s;}.ace_animate-blinking .ace_cursor {animation-duration: 1000ms;animation-timing-function: step-end;animation-name: blink-ace-animate;animation-iteration-count: infinite;}.ace_animate-blinking.ace_smooth-blinking .ace_cursor {animation-duration: 1000ms;animation-timing-function: ease-in-out;animation-name: blink-ace-animate-smooth;}@keyframes blink-ace-animate {from, to { opacity: 1; }60% { opacity: 0; }}@keyframes blink-ace-animate-smooth {from, to { opacity: 1; }45% { opacity: 1; }60% { opacity: 0; }85% { opacity: 0; }}.ace_marker-layer .ace_step, .ace_marker-layer .ace_stack {position: absolute;z-index: 3;}.ace_marker-layer .ace_selection {position: absolute;z-index: 5;}.ace_marker-layer .ace_bracket {position: absolute;z-index: 6;}.ace_marker-layer .ace_active-line {position: absolute;z-index: 2;}.ace_marker-layer .ace_selected-word {position: absolute;z-index: 4;box-sizing: border-box;}.ace_line .ace_fold {box-sizing: border-box;display: inline-block;height: 11px;margin-top: -2px;vertical-align: middle;background-image:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAAJCAYAAADU6McMAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAJpJREFUeNpi/P//PwOlgAXGYGRklAVSokD8GmjwY1wasKljQpYACtpCFeADcHVQfQyMQAwzwAZI3wJKvCLkfKBaMSClBlR7BOQikCFGQEErIH0VqkabiGCAqwUadAzZJRxQr/0gwiXIal8zQQPnNVTgJ1TdawL0T5gBIP1MUJNhBv2HKoQHHjqNrA4WO4zY0glyNKLT2KIfIMAAQsdgGiXvgnYAAAAASUVORK5CYII="),url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAA3CAYAAADNNiA5AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAACJJREFUeNpi+P//fxgTAwPDBxDxD078RSX+YeEyDFMCIMAAI3INmXiwf2YAAAAASUVORK5CYII=");background-repeat: no-repeat, repeat-x;background-position: center center, top left;color: transparent;border: 1px solid black;border-radius: 2px;cursor: pointer;pointer-events: auto;}.ace_dark .ace_fold {}.ace_fold:hover{background-image:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAAJCAYAAADU6McMAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAJpJREFUeNpi/P//PwOlgAXGYGRklAVSokD8GmjwY1wasKljQpYACtpCFeADcHVQfQyMQAwzwAZI3wJKvCLkfKBaMSClBlR7BOQikCFGQEErIH0VqkabiGCAqwUadAzZJRxQr/0gwiXIal8zQQPnNVTgJ1TdawL0T5gBIP1MUJNhBv2HKoQHHjqNrA4WO4zY0glyNKLT2KIfIMAAQsdgGiXvgnYAAAAASUVORK5CYII="),url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAA3CAYAAADNNiA5AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAACBJREFUeNpi+P//fz4TAwPDZxDxD5X4i5fLMEwJgAADAEPVDbjNw87ZAAAAAElFTkSuQmCC");}.ace_tooltip {background-color: #FFF;background-image: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.1));border: 1px solid gray;border-radius: 1px;box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);color: black;max-width: 100%;padding: 3px 4px;position: fixed;z-index: 999999;box-sizing: border-box;cursor: default;white-space: pre;word-wrap: break-word;line-height: normal;font-style: normal;font-weight: normal;letter-spacing: normal;pointer-events: none;}.ace_folding-enabled > .ace_gutter-cell {padding-right: 13px;}.ace_fold-widget {box-sizing: border-box;margin: 0 -12px 0 1px;display: none;width: 11px;vertical-align: top;background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAANElEQVR42mWKsQ0AMAzC8ixLlrzQjzmBiEjp0A6WwBCSPgKAXoLkqSot7nN3yMwR7pZ32NzpKkVoDBUxKAAAAABJRU5ErkJggg==");background-repeat: no-repeat;background-position: center;border-radius: 3px;border: 1px solid transparent;cursor: pointer;}.ace_folding-enabled .ace_fold-widget {display: inline-block;   }.ace_fold-widget.ace_end {background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAANElEQVR42m3HwQkAMAhD0YzsRchFKI7sAikeWkrxwScEB0nh5e7KTPWimZki4tYfVbX+MNl4pyZXejUO1QAAAABJRU5ErkJggg==");}.ace_fold-widget.ace_closed {background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAAGCAYAAAAG5SQMAAAAOUlEQVR42jXKwQkAMAgDwKwqKD4EwQ26sSOkVWjgIIHAzPiCgaqiqnJHZnKICBERHN194O5b9vbLuAVRL+l0YWnZAAAAAElFTkSuQmCCXA==");}.ace_fold-widget:hover {border: 1px solid rgba(0, 0, 0, 0.3);background-color: rgba(255, 255, 255, 0.2);box-shadow: 0 1px 1px rgba(255, 255, 255, 0.7);}.ace_fold-widget:active {border: 1px solid rgba(0, 0, 0, 0.4);background-color: rgba(0, 0, 0, 0.05);box-shadow: 0 1px 1px rgba(255, 255, 255, 0.8);}.ace_dark .ace_fold-widget {background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAHklEQVQIW2P4//8/AzoGEQ7oGCaLLAhWiSwB146BAQCSTPYocqT0AAAAAElFTkSuQmCC");}.ace_dark .ace_fold-widget.ace_end {background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAH0lEQVQIW2P4//8/AxQ7wNjIAjDMgC4AxjCVKBirIAAF0kz2rlhxpAAAAABJRU5ErkJggg==");}.ace_dark .ace_fold-widget.ace_closed {background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAAFCAYAAACAcVaiAAAAHElEQVQIW2P4//+/AxAzgDADlOOAznHAKgPWAwARji8UIDTfQQAAAABJRU5ErkJggg==");}.ace_dark .ace_fold-widget:hover {box-shadow: 0 1px 1px rgba(255, 255, 255, 0.2);background-color: rgba(255, 255, 255, 0.1);}.ace_dark .ace_fold-widget:active {box-shadow: 0 1px 1px rgba(255, 255, 255, 0.2);}.ace_inline_button {border: 1px solid lightgray;display: inline-block;margin: -1px 8px;padding: 0 5px;pointer-events: auto;cursor: pointer;}.ace_inline_button:hover {border-color: gray;background: rgba(200,200,200,0.2);display: inline-block;pointer-events: auto;}.ace_fold-widget.ace_invalid {background-color: #FFB4B4;border-color: #DE5555;}.ace_fade-fold-widgets .ace_fold-widget {transition: opacity 0.4s ease 0.05s;opacity: 0;}.ace_fade-fold-widgets:hover .ace_fold-widget {transition: opacity 0.05s ease 0.05s;opacity:1;}.ace_underline {text-decoration: underline;}.ace_bold {font-weight: bold;}.ace_nobold .ace_bold {font-weight: normal;}.ace_italic {font-style: italic;}.ace_error-marker {background-color: rgba(255, 0, 0,0.2);position: absolute;z-index: 9;}.ace_highlight-marker {background-color: rgba(255, 255, 0,0.2);position: absolute;z-index: 8;}.ace_text-input-ios {position: absolute !important;top: -100000px !important;left: -100000px !important;}
+/*# sourceURL=ace/css/ace_editor.css */</style><script src="./Tie koodariksi - Ohjelmoinnin alkeet - Luku 2_files/skulpt.min.js.lataa" type="text/javascript"></script>
+<script src="./Tie koodariksi - Ohjelmoinnin alkeet - Luku 2_files/skulpt-stdlib.js.lataa" type="text/javascript"></script>
+<script src="./Tie koodariksi - Ohjelmoinnin alkeet - Luku 2_files/ace-optimized.js.lataa" type="text/javascript" charset="utf-8"></script>
+<script src="./Tie koodariksi - Ohjelmoinnin alkeet - Luku 2_files/jquery.min.js.lataa"></script>
+<script type="text/javascript">
+var worker;
+var reset;
+var currentId;
+var offset;
+
+function result(text,color) {
+    var verdict = document.getElementById("verdict"+currentId);
+    verdict.style.color = color;
+    verdict.innerHTML = text;
+}
+
+function checkAnswer(a,b) {
+    a = a.trim().split("\n");
+    b = b.trim().split("\n");
+    if (a.length != b.length) return false;
+    for (var i = 0; i < a.length; i++) {
+        if (a[i].replace(/\s+$/g,'') != b[i].replace(/\s+$/g,'')) return false;
+    }
+    return true;
+}
+
+function error(text) {
+    if (text.match(/on line/)) {
+        let a = text.split(" ");
+        let line = a[a.length - 1];
+        text = text.replace("on line "+line, "on line "+(line-offset));
+    }
+    if (text.match(/TimeLimitError/)) {
+        text += "\n\nTämä virhe johtuu siitä, että koodillasi kului yli 10 sekuntia suoriutumiseen.\nOlisiko sinulla mahdollisesti ikuinen silmukka?";
+    } else if (text.match(/NameError/)) {
+        let a = text.split("'");
+        let b = text.split(" ");
+        let line = b[b.length - 1];
+        let name = a[1];
+        text += "\n\nOhjelmasi yritti käyttää rivillä " + line + " muuttujaa " + name + ", jota ei ole olemassa.";
+    } else if (text.match(/ImportError:.*<unknown>/)) {
+        return; // let user run empty scripts
+    } else if (text.match(/ImportError/)) {
+        let a = text.split(" ");
+        let line = a[a.length - 1];
+        let name = a[4];
+        text += "\n\nModuulia nimellä '" + name + "' ei ole käytettävissä.";
+    } else if (text.match(/ZeroDivisionError/)) {
+        let a = text.split(" ");
+        let line = a[a.length - 1];
+        text += "\n\nOhjelmasi yritti jakaa nollalla rivillä " + line + ".";
+    } else if (text.match(/TypeError/)) {
+        let a = text.split("'");
+        let b = text.split(" ");
+        let line = b[b.length - 1];
+        if (a.length >= 3 && false) { // fix this later
+            let first = a[1];
+            let second = a[3];
+            let rename = [["str", "merkkijono"], ["int", "kokonaisluku"], ["float", "liukuluku"], ["list", "lista"], ["function", "funktio"]];
+            for (let i = 0; i < rename.length; i++) {
+                if (first == rename[i][0]) first = rename[i][1];
+                if (second == rename[i][0]) second = rename[i][1];
+            }
+            if (text.match(/concatenate/)) {
+                text += "\n\nOhjelmasi yritti liittää tyyppien '" + first + "' ja '" + second + "' ilmentymiä yhteen.";
+            } else if (text.match(/Add/)) {
+                text += "\n\nOhjelmasi yritti laskea tyyppien '" + first + "' ja '" + second + "' summaa.";
+            } else if (text.match(/Sub/)) {
+                text += "\n\nOhjelmasi yritti laskea tyyppien '" + first + "' ja '" + second + "' erotusta.";
+            } else if (text.match(/Mult/)) {
+                text += "\n\nOhjelmasi yritti laskea tyyppien '" + first + "' ja '" + second + "' tuloa.";
+            } else if (text.match(/Div/)) {
+                text += "\n\nOhjelmasi yritti laskea tyyppien '" + first + "' ja '" + second + "' osamäärää.";
+            } else if (text.match(/Mod/)) {
+                text += "\n\nOhjelmasi yritti laskea tyyppien '" + first + "' ja '" + second + "' jakojäännöstä.";
+            } else if (text.match(/Pow/)) {
+                text += "\n\nOhjelmasi yritti laskea tyyppien '" + first + "' ja '" + second + "' potenssia.";
+            } else {
+                let op = text.split(":")[1].split("for ")[1];
+                text += "\n\nOhjelmasi yritti laskea tyypeille '" + first + "' ja '" + second + "' operaatiota " + op + ".";
+            }
+        } else {
+            text += "\n\nOhjelmasi yritti suorittaa rivillä " + line + " operaatiota, joka ei ole mahdollinen.";
+        }
+    } else if (text.match(/ParseError/) || text.match(/SyntaxError/)) {
+        text = text.split("\n")[0];
+        let b = text.split(" ");
+        let line = b[b.length - 1];
+        text += "\n\nKoodissasi on jotain vikaa rivin " + line + " lähettyvillä.\nTarkista vielä, että olet kirjoittanut koodin oikein.";
+    }
+    log("Ohjelmasi suoritus keskeytyi seuraavaan virheeseen:\n\n", "style=\"color: red;\"");
+    log(text, "style=\"color: red;\"");
+}
+
+function log (text, style="") {
+    text = text.replace(/</g, "&lt;").replace(/>/g, "&gt;");
+    let console = document.getElementById("console"+currentId);
+    if (!reset) {
+        if (style != "" || console.innerText.length < 10000) {
+            console.innerHTML = "<span " + style + ">" + text.replace(/\n/g, "<br>") + "</span>";
+        } else {
+            if (console.innerText.lastIndexOf("...") + 4 < console.innerText.length) {
+                console.innerHTML = "<span>...<br></span>";
+            }
+        }
+        reset = true;
+    } else {
+        if (style != "" || console.innerText.length < 10000) {
+            console.innerHTML += "<span " + style + ">" + text.replace(/\n/g, "<br>") + "</span>";
+        } else {
+            if (console.innerText.lastIndexOf("...") + 4 < console.innerText.length) {
+                console.innerHTML += "<span>...<br></span>";
+            }
+        }
+    }
+}
+
+function finish() {
+    let grader = undefined;
+    try {
+        grader = eval("grader" + currentId);
+    } catch (e) {
+
+    }
+    let callback = undefined;
+    try {
+        callback = eval("callback" + currentId);
+    } catch (e) {
+
+    }
+    let success = false;
+    if (grader != undefined) {
+        if (grader()) {
+            success = true;
+            result('Ratkaisusi on oikein!','green');
+        } else {
+            success = false;
+            result('Ratkaisusi on väärin!','red');
+        }
+    }
+    if (callback != undefined) {
+        callback(success);
+    }
+}
+
+function runit(id, grade=true) {
+    if (typeof(Worker) !== "undefined") {
+        if (typeof(worker) != "undefined") {
+            var con = document.getElementById("console"+currentId);
+            con.innerHTML += "<br><span>Suoritus keskeytetty.</span>";
+            worker.terminate();
+            worker = undefined;
+        }
+        reset = false;
+        currentId = id;
+        if (grade) result('','green');
+        var con = document.getElementById("console"+id);
+        con.innerHTML = "<span>Suoritetaan...</span>";
+        worker = new Worker("../interpreter.js?2");
+        worker.onmessage = function (e) {
+            arr = e.data;
+            if (arr[0] == "stdout") {
+                log(arr[1]);
+                if (arr[2]) { // output limit exceeded
+                  worker.terminate();
+                  worker = undefined;
+                }
+            } else if (arr[0] == "error") {
+                error(arr[1]);
+                worker = undefined;
+            } else if (arr[0] == "finish") {
+                if (grade) finish();
+                worker = undefined;
+            }
+        };
+
+        var myCode = ace.edit("editor" + id).getValue();
+        var oldCode = myCode;
+        myCode = myCode.replace(/“/g,"\"");
+        myCode = myCode.replace(/”/g,"\"");
+        myCode = myCode.replace(/‘/g,"'");
+        myCode = myCode.replace(/’/g,"'");
+        if (oldCode != myCode) ace.edit("editor" + id).setValue(myCode,1);
+        // TTETT
+        offset = 0;
+        var wh = window.location.href;
+        if (wh.endsWith("/rsa") || wh.endsWith("/rsa/")) {
+            offset = 11;
+            myCode = "def pow(a,b,c):\n u = []\n while b >= 1:\n  u.append(b%2)\n  b = b//2\n x = 1\n for i in range(len(u)-1,-1,-1):\n  x = x*x%c\n  if u[i] == 1: x = x*a%c\n return x\n"+myCode;
+        }
+        if (wh.endsWith("/tekoaly") || wh.endsWith("/tekoaly/")) {
+            myCode += "\nprint(tekoaly(\""+aiInput+"\"))";
+        }
+        worker.postMessage([id, myCode]);
+        ace.edit("editor" + id).focus();
+    } else {
+        error("Koodin suorittaminen ei toimi liian vanhan selainversion vuoksi. Päivitä selaimesi tai kokeile jotain muuta selainta.");
+    }
+}
+
+function showModel(id,task) {
+    var xhttp = new XMLHttpRequest();
+    xhttp.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+            ace.edit("editormodel").setValue(this.responseText);
+            ace.edit("editormodel").clearSelection();
+            document.getElementById("consolemodel").innerText = "";
+            document.getElementById('modelbackground').style.display = "";
+        }
+    }
+    xhttp.open("GET","/model.php?task="+task,true);
+    xhttp.send();
+}
+
+window.onload = function () {
+    let boxes = document.getElementsByClassName("example");
+    
+    let formatPython = function(box, src) {
+        let formatted = "";
+        let word = "";
+        let backslash = false;
+        let string = false;
+        for (let i = 0; i < src.length; i++) {
+            let c = src[i];
+            if (word && word[0] == '#') {
+                word += c;
+                if (c == '\n') {
+                    formatted += "<i><span style='color: #9a9a9a;'>" + word + "</span></i>";
+                    word = "";
+                }
+            } else if (backslash) {
+                backslash = false;
+                word += c;
+            } else if (string && c == '\\') {
+                backslash = true;
+                word += c;
+            } else if (c == '"') {
+                string = !string;
+                word += c;
+            } else if (string) {
+                word += c;
+            } else if (c.match(/[0-9]/)) {
+                if (!word || word[0].match(/[a-zA-Z0-9äöÄÖ]/)) {
+                    word += c;
+                } else {
+                    formatted += "<b>" + word + "</b>";
+                    word = c;
+                }
+            } else if (c.match(/[a-zA-ZäöÄÖ]/)) {
+                word += c;
+            } else { // '+', ',', '&' etc.
+                if (!word) {
+
+                } else if (word.match(/^[a-zA-ZäöÄÖ0-9]+$/)) {
+                    if (word.match(/^(print|and|as|assert|break|class|continue|def|del|elif|else|except|False|finally|for|from|global|if|import|in|is|lambda|None|nonlocal|not|or|pass|raise|return|True|try|while|with|yield)$/)) {
+                        formatted += "<b>" + word + "</b>";
+                    } else if (word.match(/^[0-9]+$/)) {
+                        formatted += "<span style='color: #099;'>" + word + "</span>";
+                    } else {
+                        formatted += word;
+                    }
+                } else if (word[0] == '"') {
+                    formatted += "<span style='color: #d14;'>" + word + "</span>";
+                } else {
+                    formatted += word;
+                }
+                if (c != '#') {
+                    formatted += "<b>" + c + "</b>";
+                    word = "";
+                } else {
+                    word = "#";
+                }
+            }
+        }
+        if (!word) {
+
+        } else if (word.match(/^[a-zA-ZäöÄÖ0-9]+$/)) {
+            if (word.match(/^(print|and|as|assert|break|class|continue|def|del|elif|else|except|False|finally|for|from|global|if|import|in|is|lambda|None|nonlocal|not|or|pass|raise|return|True|try|while|with|yield)$/)) {
+                formatted += "<b>" + word + "</b>";
+            } else if (word.match(/^[0-9]+$/)) {
+                formatted += "<span style='color: #099;'>" + word + "</span>";
+            } else {
+                formatted += word;
+            }
+        } else if (word[0] == '"') {
+            formatted += "<span style='color: #d14;'>" + word + "</span>";
+        } else if (word[0] == '#') {
+            formatted += "<i><span style='color: #9a9a9a;'>" + word + "</span></i>";
+        } else {
+            formatted += word;
+        } 
+        box.innerHTML = formatted;
+    };
+
+    let formatCPP = function(box, src) {
+        let formatted = "";
+        let word = "";
+        let backslash = false;
+        let string = false;
+        for (let i = 0; i < src.length; i++) {
+            let c = src[i];
+            if (word && (word[0] == '#' || (word.match("^/[/\\*]") || (word[0] == '/' && (c.match("[/\\*]")))))) {
+                if (word[0] == '/') {
+                    word += c;
+                    if (word.match("^//")) {
+                        if (c == '\n') {
+                            formatted += "<i><span style='color: #9a9a9a;'>" + word + "</span></i>";
+                            word = "";
+                        }
+                    } else if (word.match("^/\\*")) {
+                        if (word.match("\\*/$")) {
+                            formatted += "<i><span style='color: #9a9a9a;'>" + word + "</span></i>";
+                            word = "";
+                        }
+                    }
+                } else if (word[0] == '#') {
+                    word += c;
+                    if (c == '\n') {
+                        s = word.substr(0, word.indexOf(" "));
+                        t = word.substr(word.indexOf(" "));
+                        s = s.replace("<", "&lt;");
+                        t = t.replace("<", "&lt;");
+                        formatted += "<span style='color: #009a00;'>" + s + "</span>";
+                        formatted += "<span style='color: #ec9900;'>" + t + "</span>";
+                        word = "";
+                    }
+                }
+            } else if (backslash) {
+                backslash = false;
+                word += c;
+            } else if (string && c == '\\') {
+                backslash = true;
+                word += c;
+            } else if (c == '"') {
+                string = !string;
+                word += c;
+            } else if (string) {
+                word += c;
+            } else if (c.match(/[0-9]/)) {
+                if (!word || word[0].match(/[a-zA-Z0-9äöÄÖ]/)) {
+                    word += c;
+                } else {
+                    formatted += "<b>" + word + "</b>";
+                    word = c;
+                }
+            } else if (c.match(/[a-zA-ZäöÄÖ_]/)) {
+                word += c;
+            } else { // '+', ',', '&' etc.
+                if (!word) {
+
+                } else if (word.match(/^[a-zA-ZäöÄÖ0-9]+$/)) {
+                    if (word.match(/^(alignas|alignof|and|and_eq|asm|auto|bitand|bitor|break|case|catch|class|compl|concept|const|consteval|constexpr|continue|co_await|co_return|co_yield|decltype|default|delete|do|dynamic_cast|else|enum|explicit|export|extern|false|for|friend|goto|if|inline|mutable|namespace|new|noexcept|not|not_eq|nullptr|operator|or|or_eq|private|protected|public|register|reinterpret_cast|requires|return|signed|sizeof|static|static_assert|static_cast|struct|switch|synchronized|template|this|thread_local|throw|true|try|typedef|typeid|typename|union|using|virtual|volatile|while|xor|xor_eq)$/)) {
+                        formatted += "<b>" + word + "</b>";
+                    } else if (word.match(/^(int|float|long|double|bool|void|string|char|signed|unsigned)$/)) {
+                        formatted += "<span style='color: #04A;'>" + word + "</span>";
+                    } else if (word.match(/^[0-9]+$/)) {
+                        formatted += "<span style='color: #099;'>" + word + "</span>";
+                    } else {
+                        formatted += word;
+                    }
+                } else if (word[0] == '"') {
+                    formatted += "<span style='color: #d14;'>" + word + "</span>";
+                } else {
+                    formatted += word;
+                }
+                if (c == '/') {
+                    word = "/";
+                } else if (c == '#') {
+                    word = "#";
+                } else {
+                    formatted += "<b>" + c + "</b>";
+                    word = "";
+                }
+            }
+        }
+        if (!word) {
+
+        } else if (word.match(/^[a-zA-ZäöÄÖ0-9_]+$/)) {
+            if (word.match(/^(alignas|alignof|and|and_eq|asm|auto|bitand|bitor|break|case|catch|class|compl|concept|const|consteval|constexpr|continue|co_await|co_return|co_yield|decltype|default|delete|do|dynamic_cast|else|enum|explicit|export|extern|false|for|friend|goto|if|inline|mutable|namespace|new|noexcept|not|not_eq|nullptr|operator|or|or_eq|private|protected|public|register|reinterpret_cast|requires|return|signed|sizeof|static|static_assert|static_cast|struct|switch|synchronized|template|this|thread_local|throw|true|try|typedef|typeid|typename|union|using|virtual|volatile|while|xor|xor_eq)$/)) {
+                formatted += "<b>" + word + "</b>";
+            } else if (word.match(/^(int|float|long|double|bool|void|string|char)$/)) {
+                formatted += "<span style='color: #04A;>" + word + "</span>";
+            } else if (word.match(/^[0-9]+$/)) {
+                formatted += "<span style='color: #099;'>" + word + "</span>";
+            } else {
+                formatted += word;
+            }
+        } else if (word[0] == '"') {
+            formatted += "<span style='color: #d14;'>" + word + "</span>";
+        } else if (word[0] == '/') {
+            formatted += "<i><span style='color: #9a9a9a;'>" + word + "</span></i>";
+        } else if (word[0] == '#') {
+            s = word.substr(0, word.indexOf(" "));
+            t = word.substr(word.indexOf(" "));
+            s = s.replace("<", "&lt;");
+            t = t.replace("<", "&lt;");
+            formatted += "<span style='color: #009a00;'>" + s + "</span>";
+            formatted += "<span style='color: #ec9900;'>" + t + "</span>";
+            word = "";
+        } else {
+            formatted += word;
+        }
+        box.innerHTML = formatted;
+    };
+
+    for (let boxIter in boxes) {
+        if (!boxes.hasOwnProperty(boxIter)) {
+            continue;
+        }
+        let box = boxes[boxIter];
+        let src = box.innerText;
+        if (!src.match(/[=:\(;#/]/)) {
+            continue;
+        }
+        if (src[0] == '$') continue;
+        if (window.location.href.match("alkeet")) {
+            formatPython(box, src);
+        } else if (window.location.href.match("cpp")) {
+            formatCPP(box, src);
+        } else {
+            formatPython(box, src);
+        }
+        
+    }
+}
+
+</script>
+
+
+
+
+
+<meta name="viewport" content="width=device-width">
+<link rel="stylesheet" href="./Tie koodariksi - Ohjelmoinnin alkeet - Luku 2_files/koodariksi.css">
+<title>Tie koodariksi - Ohjelmoinnin alkeet - Luku 2</title>
+<style type="text/css" id="operaUserStyle"></style><script src="./Tie koodariksi - Ohjelmoinnin alkeet - Luku 2_files/theme-github.js.lataa"></script><script src="./Tie koodariksi - Ohjelmoinnin alkeet - Luku 2_files/mode-python.js.lataa"></script><style type="text/css">:root zeus-ad, :root topadblock, :root span[id^="ezoic-pub-ad-placeholder-"], :root guj-ad, :root gpt-ad, :root div[jsdata*="CarouselPLA-"][data-id^="CarouselPLA-"], :root div[id^="zergnet-widget"], :root div[id^="yandex_ad"], :root div[id^="vuukle-ad-"], :root div[id^="sticky_ad_"], :root div[id^="rc-widget-"], :root div[id^="gpt_ad_"], :root div[id^="ezoic-pub-ad-"], :root div[id^="div-gpt-"], :root div[id^="dfp-ad-"], :root div[id^="advads_ad_"], :root div[id^="adspot-"], :root div[id^="ads300_250-widget-"], :root div[id^="ads300_100-widget-"], :root div[id^="ads250_250-widget-"], :root div[id^="adrotate_widgets-"], :root div[id^="adngin-"], :root div[id^="_vdo_ads_player_ai_"], :root div[id*="ScriptRoot"], :root div[id*="MarketGid"], :root div[data-native_ad], :root div[data-mini-ad-unit], :root div[data-insertion], :root div[data-id-advertdfpconf], :root div[data-google-query-id], :root hl-adsense, :root div[data-contentexchange-widget], :root div[data-content="Advertisement"], :root div[data-alias="300x250 Ad 2"], :root div[data-alias="300x250 Ad 1"], :root div[data-adzone], :root div[data-adunit-path], :root div[data-ad-wrapper], :root div[data-ad-targeting], :root div[data-ad-placeholder], :root div[class^="native-ad-"], :root div[data-dfp-id], :root div[class^="kiwi-ad-wrapper"], :root div[class^="Adstyled__AdWrapper-"], :root div[aria-label="Ads"], :root display-ads, :root display-ad-component, :root aside[id^="adrotate_widgets-"], :root article.ad, :root ark-top-ad, :root app-advertisement, :root app-ad, :root amp-fx-flying-carpet, :root amp-embed[type="taboola"], :root amp-connatix-player, :root amp-ad-custom, :root ad-shield-ads, :root a[onmousedown^="this.href='https://paid.outbrain.com/network/redir?"][target="_blank"] + .ob_source, :root citrus-ad-wrapper, :root a[onmousedown^="this.href='https://paid.outbrain.com/network/redir?"][target="_blank"], :root a[onmousedown^="this.href='http://paid.outbrain.com/network/redir?"][target="_blank"] + .ob_source, :root a[href^="https://yogacomplyfuel.com/"], :root a[href^="https://www.purevpn.com/"][href*="&utm_source=aff-"], :root a[href^="https://www.privateinternetaccess.com/"] > img, :root a[href^="https://www.onlineusershielder.com/"], :root a[href^="https://www.nutaku.net/signup/landing/"], :root a[href^="https://www.nudeidols.com/cams/"], :root a[href^="https://www.mypornstarcams.com/landing/click/"], :root a[href^="https://www.kingsoffetish.com/tour?partner_id="], :root a[href^="https://www.infowarsstore.com/"] > img, :root a[href^="https://t.grtyi.com/"], :root a[href^="https://www.highperformancecpmgate.com/"], :root a[href^="https://www.highcpmrevenuenetwork.com/"], :root a[href^="https://www.get-express-vpn.com/offer/"], :root a[href^="https://www.financeads.net/tc.php?"], :root a[href^="https://www.brazzersnetwork.com/landing/"], :root div[class^="Display_displayAd"], :root a[href^="https://www.sheetmusicplus.com/?aff_id="], :root a[href^="https://www.bang.com/?aff="], :root a[href^="https://www.adxsrve.com/"], :root [data-template-type="nativead"], :root a[href^="https://www.adultempire.com/"][href*="?partner_id="], :root a[href^="https://webroutetrk.com/"], :root a[href^="https://twinrdsyn.com/"], :root a[href^="https://tsartech.g2afse.com/"], :root [href^="https://www.mypatriotsupply.com/"] > img, :root a[href^="https://trk.softonixs.xyz/"], :root a[href^="https://trk.nfl-online-streams.club/"], :root a[href^="https://tracking.avapartner.com/"], :root a[href^="https://track.afcpatrk.com/"], :root a[href^="https://track.adform.net/"], :root a[href^="https://torguard.net/aff.php"] > img, :root div[data-adname], :root a[href^="https://thechleads.pro/"], :root [data-role="tile-ads-module"], :root a[href^="https://adsrv4k.com/"], :root a[href^="https://go.xlviirdr.com"], :root a[href^="https://thaudray.com/"], :root a[href^="https://www.5mno3.com/"], :root a[href^="https://taghaugh.com/"], :root a[href^="https://click.candyoffers.com/"], :root [href^="https://zstacklife.com/"] img, :root a[href^="https://t.aslnk.link/"], :root a[href^="https://t.adating.link/"], :root a[href^="https://go.trackitalltheway.com/"], :root [href^="https://track.fiverr.com/visit/"] > img, :root a[href^="https://syndication.exoclick.com/"], :root a[href^="https://syndication.dynsrvtbg.com/"], :root a[href^="https://streamate.com/landing/click/"], :root a[href^="https://ad.doubleclick.net/"], :root a[href^="https://static.fleshlight.com/images/banners/"], :root a[href^="https://go.strpjmp.com/"], :root a[href^="https://refpa4903566.top/"], :root a[href^="https://prf.hn/click/"][href*="/camref:"] > img, :root a[href^="https://serve.awmdelivery.com/"], :root a[href^="https://prf.hn/click/"][href*="/adref:"] > img, :root [href^="https://r.kraken.com/"], :root a[href^="https://mmwebhandler.aff-online.com/"], :root a[href^="https://www.bet365.com/"][href*="affiliate="], :root a[href^="https://pb-track.com/"], :root a[href^="https://paid.outbrain.com/network/redir?"], :root div[id^="ad_position_"], :root a[href^="https://ovb.im/"], :root div[id^="ad-div-"], :root a[href^="https://newbinotracs.com/"], :root a[href^="https://natour.naughtyamerica.com/track/"], :root [href^="https://stvkr.com/"], :root a[href^="https://mediaserver.entainpartners.com/renderBanner.do?"], :root [href^="https://www.herbanomic.com/"] > img, :root a[href^="https://maymooth-stopic.com/"], :root a[href^="https://loboclick.com"], :root [href^="https://routewebtk.com/"], :root a[href^="https://see.kmisln.com/"], :root a[href^="https://a.bestcontentweb.top/"], :root a[href^="https://lobimax.com/"], :root a[href^="https://lead1.pl/"], :root a[href^="https://refpa.top/"], :root a[href^="https://landing.brazzersnetwork.com/"], :root a[href^="https://ads.leovegas.com/redirect.aspx?"], :root a[href^="https://land.brazzersnetwork.com/landing/"], :root a[href^="https://juicyads.in/"], :root a[href^="https://itubego.com/video-downloader/?affid="], :root a[href^="https://iqbroker.com/"][href*="?aff="], :root a[href^="https://incisivetrk.cvtr.io/click?"], :root [data-revive-zoneid], :root a[href^="https://googleads.g.doubleclick.net/pcs/click"], :root a[href^="https://clk.wrenchsound.store/"], :root a[href^="https://go.zybrdr.com"], :root [href^="http://join.michelle-austin.com/"], :root [class^="tile-picker__CitrusBannerContainer-sc-"], :root a[href^="https://go.xxxiijmp.com"], :root a[href^="https://go.xtbaffiliates.com/"], :root a[href^="https://ismlks.com/"], :root a[href^="//a.bestcontentfare.top/"], :root [href^="https://www.mypillow.com/"] > img, :root a[href^="https://azpresearch.club/"], :root a[href^="https://go.xlirdr.com"], :root [data-css-class="dfp-inarticle"], :root .card-captioned.crd > .crd--cnt > .s2nPlayer, :root a[href^="https://go.tmrjmp.com"], :root a[href^="https://go.skinstrip.net"][href*="?campaignId="], :root a[href^="https://go.markets.com/visit/?bta="], :root a[href^="https://billing.purevpn.com/aff.php"] > img, :root a[href^="https://go.hpyrdr.com/"], :root a[href^="https://go.goaserv.com/"], :root a[href^="https://track.wg-aff.com"], :root a[href^="https://go.ebrokerserve.com/"], :root a[href^="https://go.dmzjmp.com"], :root a[href^="https://twinrdsrv.com/"], :root a[href^="https://go.admjmp.com/"], :root [href^="https://kingered-banctours.com/"], :root a[href^="https://get.surfshark.net/aff_c?"][href*="&aff_id="] > img, :root a-ad, :root a[href^="https://affiliate.rusvpn.com/click.php?"], :root a[href^="https://geniusdexchange.com/"], :root a[href^="https://frameworkdeserve.com/"], :root a[href^="https://flirtandsweets.life/"], :root a[href^="https://www.mrskin.com/account/"], :root a[href^="https://www.mrskin.com/tour"], :root a[href^="https://financeads.net/tc.php?"], :root bottomadblock, :root a[href^="https://fertilitycommand.com/"], :root [data-freestar-ad], :root a[href^="https://fc.lc/ref/"], :root div[data-native-ad], :root a[href^="https://engine.trackingdesks.com/"], :root [href^="https://totlnkcl.com/"], :root a[href^="https://www.adskeeper.com"], :root a[data-redirect^="https://paid.outbrain.com/network/redir?"], :root [href^="https://www.reimageplus.com/"], :root a[href^="https://engine.phn.doublepimp.com/"], :root a[href^="https://engine.blueistheneworanges.com/"], :root a[href^="https://wantopticalfreelance.com/"], :root a[href^="https://dl-protect.net/"], :root a[href^="https://datingoffers30.info/"], :root a[href^="https://clixtrac.com/"], :root a[href^="https://mediaserver.gvcaffiliates.com/renderBanner.do?"], :root a[href^="https://join.dreamsexworld.com/"], :root a[href^="https://click.linksynergy.com/fs-bin/"], :root AD-TRIPLE-BOX, :root a[href^="https://click.hoolig.app/"], :root a[href^="https://track.totalav.com/"], :root img[src^="https://images.purevpnaffiliates.com"], :root a[href^="https://porntubemate.com/"], :root a[href^="http://www.gfrevenge.com/landing/"], :root a[href^="https://clickadilla.com/"], :root a[href^="https://click.dtiserv2.com/"], :root a[href^="https://go.xlvirdr.com"], :root a[href^="https://claring-loccelkin.com/"], :root [class^="s2nPlayer"], :root a[href^="https://chaturbate.jjgirls.com/?track="], :root a[href^="https://chaturbate.com/in/?track="], :root a[href^="https://chaturbate.com/in/?tour="], :root a[href^="https://cams.imagetwist.com/in/?track="], :root a[href^="https://cam4com.go2cloud.org/"], :root a[href^="https://bongacams2.com/track?"], :root a[href^="https://www.sheetmusicplus.com/"][href*="?aff_id="], :root a[href^="https://bngpt.com/"], :root a[href^="https://bluedelivery.pro/"], :root #topstuff > #tads, :root a[href^="https://black77854.com/"], :root a[href^="https://ndt5.net/"], :root a[href^="https://batheunits.com/"], :root a[target="_blank"][onmousedown="this.href^='http://paid.outbrain.com/network/redir?"], :root a[href^="https://banners.livepartners.com/"], :root a[href^="https://m.do.co/c/"] > img, :root [href="https://masstortfinancing.com"] img, :root a[href^="https://bongacams10.com/track?"], :root a[href^="https://albionsoftwares.com/"], :root a[href^="https://t.hrtye.com/"], :root a[href^="https://go.etoro.com/"] > img, :root a[href^="https://join.sexworld3d.com/track/"], :root a[href^="https://intenseaffiliates.com/redirect/"], :root a[href^="https://aweptjmp.com/"], :root a[href^="https://ads.ad4game.com/"], :root [id^="google_ads_iframe"], :root a[href^="https://syndication.optimizesrv.com/"], :root a[href^="https://affpa.top/"], :root a[href^="https://adnetwrk.com/"], :root a[href^="https://adjoincomprise.com/"], :root [href^="http://misslinkvocation.com/"], :root a[href^="https://adclick.g.doubleclick.net/"], :root a[href^="https://go.nordvpn.net/aff"] > img, :root [href^="http://clicks.totemcash.com/"], :root a[href^="https://misspkl.com/"], :root a[href^="https://ad.zanox.com/ppc/"] > img, :root a[href^="https://ad.kubiccomps.icu/"], :root a[href^="https://adswick.com/"], :root a[href^="https://a.bestcontentoperation.top/"], :root [data-m-ad-id], :root a[href^="https://a-ads.com/"], :root [href="https://ourgoldguy.com/contact/"] img, :root a[href^="https://brightadnetwork.com/"], :root [href^="https://www.avantlink.com/click.php"] img, :root a[href^="http://www.onwebcam.com/random?t_link="], :root a[href^="https://awentw.com/"], :root a[href^="https://www.googleadservices.com/pagead/aclk?"], :root a[href^="http://www.mrskin.com/tour"], :root a[href^="https://agacelebir.com/"], :root a[href^="https://spygasm.com/track?"], :root a[href^="http://d2.zedo.com/"], :root a[href^="http://www.friendlyduck.com/AF_"], :root a[href^="http://trk.globwo.online/"], :root a[href^="https://prf.hn/click/"][href*="/creativeref:"] > img, :root a[href^="http://www.adultempire.com/unlimited/promo?"][href*="&partner_id="], :root a[href^="http://traffic.tc-clicks.com/"], :root a[href^="http://tour.mrskin.com/"], :root a[href^="https://join.virtualtaboo.com/track/"], :root a[href^="https://funkydaters.com/"], :root [id^="ad_sky"], :root a[href^="http://https://www.get-express-vpn.com/offer/"], :root div[id^="google_dfp_"], :root a[href^="http://googleads.g.doubleclick.net/pcs/click"], :root .rc-cta[data-target], :root [href^="http://go.cm-trk2.com/"], :root a[href^="http://click.payserve.com/"], :root a[href^="https://porngames.adult/?SID="], :root a[href^="https://landing1.brazzersnetwork.com"], :root #slashboxes > .deals-rail, :root [href^="http://globsads.com/"], :root [href^="https://www.brighteonstore.com/products/"] img, :root a[href^="http://bc.vc/?r="], :root a[href^="https://mityneedn.com/"], :root [href^="http://homemoviestube.com/"], :root a[href^="http://ad.doubleclick.net/"], :root a[href^="https://a2.adform.net/"], :root a[href^="http://static.fleshlight.com/images/banners/"], :root a[href^="https://a.adtng.com/"], :root a[href^="//pubads.g.doubleclick.net/"], :root [data-d-ad-id], :root a[href*=".engine.adglare.net/"], :root [data-dynamic-ads], :root a[data-widget-outbrain-redirect^="http://paid.outbrain.com/network/redir?"], :root [data-ad-width], :root [href^="https://join.playboyplus.com/track/"], :root a[data-url^="http://paid.outbrain.com/network/redir?"] + .author, :root a[href^="https://axdsz.pro/"], :root a[href^="http://bodelen.com/"], :root a[data-oburl^="https://paid.outbrain.com/network/redir?"], :root [href^="https://cpa.10kfreesilver.com/"], :root a[href^="https://a.bestcontentfood.top/"], :root a[href^="https://reinstandpointdumbest.com/"], :root a[data-obtrack^="http://paid.outbrain.com/network/redir?"], :root a[href^="http://wct.link/"], :root [href^="https://goldforyourfuture.com/clk.trk"] img, :root [href^="https://infinitytrk.com/"], :root [onclick^="location.href='http://www.reimageplus.com"], :root .commercial-unit-mobile-top .jackpot-main-content-container > .UpgKEd + .nZZLFc > .vci, :root [id^="section-ad-banner"], :root .commercial-unit-mobile-top > div[data-pla="1"], :root a[href^="https://go.julrdr.com/"], :root .trc_rbox_div .syndicatedItemUB, :root [href^="https://zone.gotrackier.com/"], :root [href^="https://www.targetingpartner.com/"], :root [href^="https://detachedbates.com/"], :root a[href^="https://fourwhenstatistics.com/"], :root [href^="https://www.restoro.com/"], :root [href^="https://ilovemyfreedoms.com/landing-"], :root a[href^="https://staRTgaming.net/tienda/"], :root a[href^="https://STaRtgAmInG.net/tienda/"], :root a[href^="https://fastestvpn.com/lifetime-special-deal?a_aid="], :root a[href^="https://tour.mrskin.com/"], :root div[id^="ad-position-"], :root a[href^="http://adultfriendfinder.com/go/page/landing"], :root a[href^="http://affiliate.glbtracker.com/"], :root a[href^="https://leg.xyz/?track="], :root div[id^="crt-"][style], :root a[href^="http://adultgames.xxx/"], :root a[href^="https://traffic.bannerator.com/"], :root [href^="https://shiftnetwork.infusionsoft.com/go/"] > img, :root a[onmousedown^="this.href='http://paid.outbrain.com/network/redir?"][target="_blank"], :root [href^="https://secure.bmtmicro.com/servlets/"], :root a[href^="https://losingoldfry.com/"], :root .scroll-fixable.rail-right > .deals-rail, :root a[href^="https://oackoubs.com/"], :root a[href^="https://awptjmp.com/"], :root a[href^="https://go.goasrv.com/"], :root .commercial-unit-mobile-top > .v7hl4d, :root [href^="http://mypillow.com/"] > img, :root a[href^="http://bongacams.com/track?"], :root a[href^="https://fleshlight.sjv.io/"], :root [data-ad-manager-id], :root a[href^="https://promo-bc.com/"], :root a[href^="https://clicks.pipaffiliates.com/"], :root [href^="https://noqreport.com/"] > img, :root a[href^="https://go.hpyjmp.com"], :root ADS-RIGHT, :root [href^="https://mystore.com/"] > img, :root [href^="https://mypatriotsupply.com/"] > img, :root [href^="https://mylead.global/stl/"] > img, :root #leader-companion > a[href], :root a[href^="https://transfer.xe.com/signup/track/redirect?"], :root .vid-present > .van_vid_carousel__padding, :root a[href^="https://go.xxxijmp.com"], :root [href^="https://istlnkcl.com/"], :root [href^="https://www.hostg.xyz/"] > img, :root .section-subheader > .section-hotel-prices-header, :root [href^="https://go.affiliatexe.com/"], :root [href^="https://go.4rabettraff.com/"], :root a[href^="https://tm-offers.gamingadult.com/"], :root [href^="https://charmingdatings.life/"], :root [href^="https://glersakr.com/"], :root ins.adsbygoogle, :root a[href^="https://1startfiledownload1.com/"], :root .trc_rbox_border_elm .syndicatedItem, :root a[href^="http://www.onclickmega.com/jump/next.php?"], :root a[href^="http://adf.ly/?id="], :root a[href^="https://wittered-mainging.com/"], :root [href^="https://engine.gettopple.com/"], :root a[href^="https://go.gldrdr.com/"], :root [data-id^="div-gpt-ad"], :root [href^="https://awbbjmp.com/"], :root a[href^="https://k2s.cc/pr/"], :root [href^="https://affect3dnetwork.com/track/"], :root a[href^="https://camfapr.com/landing/click/"], :root [href="//sexcams.plus/"], :root a[href^="https://go.currency.com/"], :root [href^="http://www.mypillow.com/"] > img, :root div[id^="div-ads-"], :root [href^="https://rapidgator.net/article/premium/ref/"], :root a[href^="https://www.sugarinstant.com/?partner_id="], :root a[href^="https://adultfriendfinder.com/go/page/landing"], :root [href^="https://join3.bannedsextapes.com"], :root div[data-spotim-slot], :root [href^="https://antiagingbed.com/discount/"] > img, :root a[href^="https://go.247traffic.com/"], :root [href^="https://join.girlsoutwest.com/"], :root [href^="http://trafficare.net/"], :root a[href^="https://tc.tradetracker.net/"] > img, :root a[href^="https://adserver.adreactor.com/"], :root [href^="http://join.shemalesfromhell.com/"], :root [id^="ad_slider"], :root #searchResultsList > div > div[onclick$="'inline.ad'});"], :root [data-adbridg-ad-class], :root a[href^="http://www.adultdvdempire.com/?partner_id="][href*="&utm_"], :root [href^="http://join.shemale.xxx/"], :root a[href^="https://ads.betfair.com/redirect.aspx?"], :root [href^="http://www.fleshlightgirls.com/"], :root [href^="http://join.trannies-fuck.com/"], :root .trc_rbox .syndicatedItem, :root a[href^="http://cam4com.go2cloud.org/aff_c?"], :root a[href^="https://cpmspace.com/"], :root [href^="https://freecourseweb.com/"] > .sitefriend, :root a[href^="https://thefacux.com/"], :root a[href^="https://ads.planetwin365affiliate.com/redirect.aspx?"], :root [href^="http://join.rodneymoore.com/"], :root a[href*=".trust.zone"], :root [href^="https://shrugartisticelder.com"], :root [href^="https://go.xlrdr.com"], :root a[href^="https://staRTgamIng.net/tienda/"], :root div[id^="lazyad-"], :root a[href^="http://com-1.pro/"], :root [name^="google_ads_iframe"], :root a[href^="https://go.xxxjmp.com"], :root [data-desktop-ad-id], :root [href^="https://wct.link/"], :root div[recirculation-ad-container], :root [href^="https://traffserve.com/"], :root #kt_player > a[target="_blank"], :root [href="https://www.masstortfinancing.com/"] > img, :root .ob_container .item-container-obpd, :root [id^="div-gpt-ad"], :root [href^="https://mypillow.com/"] > img, :root [href^="https://ad.admitad.com/"], :root a[href^="https://u.expresstech.io/"], :root a[href^="https://www.geekbuying.com/dynamic-ads/"], :root a[href^="https://lnkxt.bannerator.com/"], :root [href="https://jdrucker.com/gold"] > img, :root [href^="https://v.investologic.co.uk/"], :root [href^="https://cipledecline.buzz/"], :root a[href^="https://track.ultravpn.com/"], :root [href^="https://goldcometals.com/clk.trk"], :root [href^="https://fancentro.com/"], :root [data-mobile-ad-id], :root a[href^="https://trk.sportsflix4k.club/"], :root a[href^="https://go.xlivrdr.com"], :root [onclick*="content.ad/"], :root AMP-AD, :root [data-ad-cls], :root a[href^="https://www.goldenfrog.com/vyprvpn?offer_id="][href*="&aff_id="], :root [id^="ad-wrap-"], :root div[id^="taboola-stream-"], :root [href^="https://go.astutelinks.com/"], :root a[href^="http://tc.tradetracker.net/"] > img, :root a[href^="http://affiliates.thrixxx.com/"], :root [class^="amp-ad-"], :root [href^="https://affiliate.fastcomet.com/"] > img, :root [class^="adDisplay-module"], :root a[href^="http://go.xtbaffiliates.com/"], :root [href^="https://click2cvs.com/"], :root a[href^="https://www.liquidfire.mobi/"], :root .grid > .container > #aside-promotion, :root DFP-AD, :root AD-SLOT, :root .ob_dual_right > .ob_ads_header ~ .odb_div, :root .trc_related_container div[data-item-syndicated="true"], :root [href^="http://join.shemalepornstar.com/"], :root a[href^="https://go.xlviiirdr.com"], :root .trc_rbox_div .syndicatedItem, :root div[data-adunit], :root app-large-ad, :root [href^="https://turtlebids.irauctions.com/"] img, :root a[href^="https://iactrivago.ampxdirect.com/"], :root a[href^="https://a.medfoodhome.com/"], :root [data-ad-module], :root a[href^="https://go.cmtaffiliates.com/"], :root [data-name="adaptiveConstructorAd"], :root [href^="https://optimizedelite.com/"] > img, :root [href^="https://trackfin.asia/"], :root .plistaList > .plista_widget_underArticle_item[data-type="pet"], :root a[href*="//lkstrck2.com/"], :root .plistaList > .itemLinkPET, :root a[href^="https://startgAming.net/tienda/"], :root [href^="https://safer-redirection.com"], :root atf-ad-slot, :root .commercial-unit-mobile-top .jackpot-main-content-container > .UpgKEd + .nZZLFc > div > .vci, :root a[href^="http://partners.etoro.com/"], :root [data-advadstrackid], :root #atvcap + #tvcap > .mnr-c > .commercial-unit-mobile-top, :root a[href^="https://traffdaq.com/"], :root [class^="div-gpt-ad"], :root a[href^="https://bs.serving-sys.com"], :root [href^="http://residenceseeingstanding.com/"], :root [href^="https://www.cloudways.com/en/?id"], :root a[href^="https://refpazkjixes.top/"], :root #mgb-container > #mgb, :root a[href^="https://join.virtuallust3d.com/"], :root #taw > .med + div > #tvcap > .mnr-c:not(.qs-ic) > .commercial-unit-mobile-top, :root [data-adblockkey], :root [data-ez-name] { display: none !important; }</style></head>
+<body>
+
+<div class="system-nav white-info" style="background-image: url(&#39;/alkeet.jpg&#39;);">  <h4><a href="https://koodariksi.fi/">Tie koodariksi</a></h4>
+
+  <div class="login nav">
+Kirjautuneena: oskaris <a href="https://koodariksi.fi/profile/">Oma profiili</a> <a href="https://koodariksi.fi/logout/">Kirjaudu ulos</a><script>loggedIn = true;</script><script>teacherMode = false;</script>  </div>
+</div>
+
+<div>
+
+<h1>Ohjelmoinnin alkeet</h1>
+<div class="top-nav course-nav nav">
+<a href="https://koodariksi.fi/alkeet/0" title="Luku 0">★</a><a href="https://koodariksi.fi/alkeet/1" title="Luku 1">1</a><a href="https://koodariksi.fi/alkeet/2" title="Luku 2" class="current">2</a><a href="https://koodariksi.fi/alkeet/3" title="Luku 3">3</a><a href="https://koodariksi.fi/alkeet/4" title="Luku 4">4</a><a href="https://koodariksi.fi/alkeet/5" title="Luku 5">5</a><a href="https://koodariksi.fi/alkeet/6" title="Luku 6">6</a><a href="https://koodariksi.fi/alkeet/7" title="Luku 7">7</a><a href="https://koodariksi.fi/alkeet/8" title="Luku 8">8</a><a href="https://koodariksi.fi/alkeet/9" title="Luku 9">9</a><a href="https://koodariksi.fi/alkeet/10" title="Luku 10">10</a><a href="https://koodariksi.fi/alkeet/11" title="Luku 11">11</a><a href="https://koodariksi.fi/alkeet/12" title="Luku 12">12</a><a href="https://koodariksi.fi/alkeet/13" title="Luku 13">13</a><a href="https://koodariksi.fi/alkeet/14" title="Luku 14">14</a><a href="https://koodariksi.fi/alkeet/15" title="Luku 15">15</a><a href="https://koodariksi.fi/alkeet/16" title="Luku 16">16</a></div>
+
+<script>
+function changeLang() {
+    var s = document.getElementById("selectLang").selectedIndex;
+    var c = s == 0 ? "alkeet" : "grunder";
+    var p = "2";
+    window.location.href = "/"+c+"/"+p;
+}
+</script>
+<div>
+<div style="float:right;">
+Kieli:
+<select id="selectLang" onchange="changeLang()">
+<option selected="">suomi</option><option>ruotsi</option></select>
+</div>
+
+<h2>Luku 2: Ensimmäinen ohjelma</h2>
+
+Tietokoneen ohjelmointi tarkoittaa, että kirjoitamme
+<i>ohjelman</i> eli <i>koodin</i>,
+jossa olevat komennot kertovat koneelle, mitä sen tulee tehdä.
+Kun ohjelma suoritetaan, kone käy läpi koodirivit
+yksi kerrallaan ylhäältä alaspäin ja toteuttaa niissä olevat komennot.
+
+<p>
+
+Aloitamme ohjelmoinnin komennosta <code>print</code>,
+joka <i>tulostaa</i> tekstiä eli näyttää tekstiä ruudulla.
+Tämän komennon avulla tietokone pystyy näyttämään tietoa
+ohjelman käyttäjälle.
+
+</p><p>
+
+Ensimmäinen ohjelmamme on tässä:
+
+</p><p>
+
+</p><pre id="box1" class="example"><i><span style="color: #9a9a9a;"># kolme riviä tekstiä
+</span></i><b>print</b><b>(</b><span style="color: #d14;">"a on apina"</span><b>)</b><b>
+</b><b>print</b><b>(</b><span style="color: #d14;">"b on banaani"</span><b>)</b><b>
+</b><b>print</b><b>(</b><span style="color: #d14;">"c on cembalo"</span><b>)</b><b>
+</b><b>
+</b><i><span style="color: #9a9a9a;"># lasketaan laskuja
+</span></i><b>print</b><b>(</b><span style="color: #099;">1</span><b>+</b><span style="color: #099;">2</span><b>)</b><b>
+</b><b>print</b><b>(</b><span style="color: #099;">5</span><b>*</b><span style="color: #099;">3</span><b>+</b><span style="color: #099;">4</span><b>)</b><b>
+</b><b>print</b><b>(</b><span style="color: #099;">5</span><b>*</b><b>(</b><span style="color: #099;">3</span><b>+</b><span style="color: #099;">4</span><b>)</b><b>)</b><b>
+</b><b>
+</b><i><span style="color: #9a9a9a;"># 365 päivää, 24 tuntia, 60 minuuttia, 60 sekuntia
+</span></i><b>print</b><b>(</b><span style="color: #d14;">"vuodessa on"</span><b>,</b><b> </b><span style="color: #099;">365</span><b>*</b><span style="color: #099;">24</span><b>*</b><span style="color: #099;">60</span><b>*</b><span style="color: #099;">60</span><b>,</b><b> </b><span style="color: #d14;">"sekuntia"</span><b>)</b></pre>
+
+<p>
+
+Kun suoritamme ohjelman, tietokone tulostaa seuraavat rivit:
+
+</p><p>
+
+</p><pre id="box2" class="example">a on apina
+b on banaani
+c on cembalo
+3
+19
+35
+vuodessa on 31536000 sekuntia</pre>
+
+<p>
+
+Katsotaan nyt tarkemmin, miten ohjelma on muodostunut.
+Koodin ensimmäisellä rivillä on <i>kommentti</i>,
+jonka edessä on risuaita <code>#</code>.
+Tämä on ohjelmoijan tekemä huomautus, josta tietokone ei välitä.
+Kun kone suorittaa koodin, se hyppää yli kaikki kommentit,
+joiden alussa on risuaita.
+
+</p><p>
+
+Tämän jälkeen koodissa on kolme <code>print</code>-komentoa,
+joista jokainen tulostaa rivin tekstiä.
+Teksti on annettu lainausmerkkien sisällä, mikä tarkoittaa,
+että kone tulostaa tekstin sellaisenaan.
+Näiden komentojen jälkeen koodissa on tyhjä rivi,
+jonka kone jättää huomiotta.
+Voimme laittaa koodiin tyhjiä rivejä aina halutessamme.
+
+</p><p>
+
+Koodin seuraavassa osassa ohjelma laskee kolme laskua.
+Kun kirjoitamme <code>print</code>-komennon sisään laskun,
+kone tulostaa näkyviin laskun vastauksen.
+Voimme kirjoittaa laskun samaan tapaan kuin matematiikassa yleensä
+ja käyttää tarvittaessa sulkuja laskujärjestyksen ilmaisemiseen.
+
+</p><p>
+
+Koodin viimeinen rivi näyttää, kuinka voimme yhdistää tekstiä
+ja laskuja samalle riville laittamalla niiden väliin pilkkuja.
+Tällä rivillä ohjelma laskee, montako sekuntia on vuodessa,
+ja ilmoittaa tuloksen tekstin sisällä.
+
+</p><p>
+
+</p><hr>
+
+<p>
+
+Tällä kurssilla on käytössä selaimessa toimiva <i>editori</i>,
+jonka avulla voit harjoitella ohjelmointia.
+Editorissa on tekstikenttä, johon voit kirjoittaa ohjelman koodin,
+sekä nappi "Suorita", joka suorittaa ohjelman.
+
+</p><p>
+
+Alla olevassa editorissa on valmiina äskeisen esimerkkiohjelmamme koodi.
+Voit nyt kokeilla, mitä tapahtuu, kun suoritat koodin,
+sekä tehdä muutoksia koodiin ja tutkia,
+miten ne vaikuttavat ohjelman toimintaan.
+
+</p><p>
+
+</p><div id="editor1" class="editor ace_editor ace-github" style="font-size: 12pt; height: 188.25px;"><textarea class="ace_text-input" wrap="off" autocorrect="off" autocapitalize="off" spellcheck="false" style="opacity: 0; font-size: 1px; height: 1px; width: 1px; top: 16px; left: 48px;"></textarea><div class="ace_gutter" aria-hidden="true" style="left: 0px; width: 44px;"><div class="ace_layer ace_gutter-layer" style="height: 1e+06px; top: 0px; left: 0px; width: 44px;"><div class="ace_gutter-cell ace_gutter-active-line " style="height: 15.6875px; top: 0px;">1<span style="display: none;"></span></div><div class="ace_gutter-cell " style="height: 15.6875px; top: 15.6875px;">2<span style="display: none;"></span></div><div class="ace_gutter-cell " style="height: 15.6875px; top: 31.375px;">3<span style="display: none;"></span></div><div class="ace_gutter-cell " style="height: 15.6875px; top: 47.0625px;">4<span style="display: none;"></span></div><div class="ace_gutter-cell " style="height: 15.6875px; top: 62.75px;">5<span style="display: none;"></span></div><div class="ace_gutter-cell " style="height: 15.6875px; top: 78.4375px;">6<span style="display: none;"></span></div><div class="ace_gutter-cell " style="height: 15.6875px; top: 94.125px;">7<span style="display: none;"></span></div><div class="ace_gutter-cell " style="height: 15.6875px; top: 109.812px;">8<span style="display: none;"></span></div><div class="ace_gutter-cell " style="height: 15.6875px; top: 125.5px;">9<span style="display: none;"></span></div><div class="ace_gutter-cell " style="height: 15.6875px; top: 141.188px;">10<span style="display: none;"></span></div><div class="ace_gutter-cell " style="height: 15.6875px; top: 156.875px;">11<span style="display: none;"></span></div><div class="ace_gutter-cell " style="height: 15.6875px; top: 172.562px;">12<span style="display: none;"></span></div></div></div><div class="ace_scroller" style="left: 44px; right: 0px; bottom: 0px;"><div class="ace_content" style="top: 0px; left: 0px; width: 574px; height: 219.625px;"><div class="ace_layer ace_print-margin-layer"><div class="ace_print-margin" style="left: 708px; visibility: hidden;"></div></div><div class="ace_layer ace_marker-layer"></div><div class="ace_layer ace_text-layer" style="height: 1e+06px; margin: 0px 4px; top: 0px; left: 0px;"><div class="ace_line" style="height: 15.6875px; top: 0px;"><span class="ace_comment"># kolme riviä tekstiä</span></div><div class="ace_line" style="height: 15.6875px; top: 15.6875px;"><span class="ace_keyword">print</span><span class="ace_paren ace_lparen">(</span><span class="ace_string">"a on apina"</span><span class="ace_paren ace_rparen">)</span></div><div class="ace_line" style="height: 15.6875px; top: 31.375px;"><span class="ace_keyword">print</span><span class="ace_paren ace_lparen">(</span><span class="ace_string">"b on banaani"</span><span class="ace_paren ace_rparen">)</span></div><div class="ace_line" style="height: 15.6875px; top: 47.0625px;"><span class="ace_keyword">print</span><span class="ace_paren ace_lparen">(</span><span class="ace_string">"c on cembalo"</span><span class="ace_paren ace_rparen">)</span></div><div class="ace_line" style="height: 15.6875px; top: 62.75px;"></div><div class="ace_line" style="height: 15.6875px; top: 78.4375px;"><span class="ace_comment"># lasketaan laskuja</span></div><div class="ace_line" style="height: 15.6875px; top: 94.125px;"><span class="ace_keyword">print</span><span class="ace_paren ace_lparen">(</span><span class="ace_constant ace_numeric">1</span><span class="ace_keyword ace_operator">+</span><span class="ace_constant ace_numeric">2</span><span class="ace_paren ace_rparen">)</span></div><div class="ace_line" style="height: 15.6875px; top: 109.812px;"><span class="ace_keyword">print</span><span class="ace_paren ace_lparen">(</span><span class="ace_constant ace_numeric">5</span><span class="ace_keyword ace_operator">*</span><span class="ace_constant ace_numeric">3</span><span class="ace_keyword ace_operator">+</span><span class="ace_constant ace_numeric">4</span><span class="ace_paren ace_rparen">)</span></div><div class="ace_line" style="height: 15.6875px; top: 125.5px;"><span class="ace_keyword">print</span><span class="ace_paren ace_lparen">(</span><span class="ace_constant ace_numeric">5</span><span class="ace_keyword ace_operator">*</span><span class="ace_paren ace_lparen">(</span><span class="ace_constant ace_numeric">3</span><span class="ace_keyword ace_operator">+</span><span class="ace_constant ace_numeric">4</span><span class="ace_paren ace_rparen">))</span></div><div class="ace_line" style="height: 15.6875px; top: 141.188px;"></div><div class="ace_line" style="height: 15.6875px; top: 156.875px;"><span class="ace_comment"># 365 päivää, 24 tuntia, 60 minuuttia, 60 sekuntia</span></div><div class="ace_line" style="height: 15.6875px; top: 172.562px;"><span class="ace_keyword">print</span><span class="ace_paren ace_lparen">(</span><span class="ace_string">"vuodessa on"</span>, <span class="ace_constant ace_numeric">365</span><span class="ace_keyword ace_operator">*</span><span class="ace_constant ace_numeric">24</span><span class="ace_keyword ace_operator">*</span><span class="ace_constant ace_numeric">60</span><span class="ace_keyword ace_operator">*</span><span class="ace_constant ace_numeric">60</span>, <span class="ace_string">"sekuntia"</span><span class="ace_paren ace_rparen">)</span></div></div><div class="ace_layer ace_marker-layer"></div><div class="ace_layer ace_cursor-layer ace_hidden-cursors"><div class="ace_cursor" style="display: block; top: 0px; left: 4px; width: 9px; height: 15.6875px;"></div></div></div></div><div class="ace_scrollbar ace_scrollbar-v" style="display: none; width: 20px; bottom: 0px;"><div class="ace_scrollbar-inner" style="width: 20px; height: 188.25px;"></div></div><div class="ace_scrollbar ace_scrollbar-h" style="display: none; height: 20px; left: 44px; right: 0px;"><div class="ace_scrollbar-inner" style="height: 20px; width: 574px;"></div></div><div style="height: auto; width: auto; top: 0px; left: 0px; visibility: hidden; position: absolute; white-space: pre; font: inherit; overflow: hidden;"><div style="height: auto; width: auto; top: 0px; left: 0px; visibility: hidden; position: absolute; white-space: pre; font: inherit; overflow: visible;">הההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההה</div><div style="height: auto; width: auto; top: 0px; left: 0px; visibility: hidden; position: absolute; white-space: pre; font-style: inherit; font-variant: inherit; font-stretch: inherit; font-size: inherit; line-height: inherit; font-family: inherit; font-optical-sizing: inherit; font-kerning: inherit; font-feature-settings: inherit; font-variation-settings: inherit; overflow: visible;">XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</div></div></div>
+<div><button onclick="runit(1)" class="run">Suorita</button></div>
+<span id="verdict1"></span>
+<div class="console" id="console1"><br></div>
+<p>
+<script>
+var editor1 = ace.edit("editor1");
+editor1.setTheme("ace/theme/github");
+editor1.session.setMode("ace/mode/python");
+editor1.setOptions({maxLines: Infinity, fontSize: "12pt", highlightActiveLine:false, highlightSelectedWord:false, showLineNumbers:true, showFoldWidgets:false, displayIndentGuides:false, showGutter:true, behavioursEnabled:false, showPrintMargin:false});
+</script>
+
+</p><p>
+
+</p><hr>
+
+<p>
+
+Ohjelmointia oppii tekemällä,
+ja kurssin aikana saat ratkottavaksesi monia ohjelmointitehtäviä.
+Seuraavissa tehtävissä pääset harjoittelemaan <code>print</code>-komennon
+käyttämistä.
+
+</p><p>
+
+Jokaisessa tehtävässä sinun tulee kirjoittaa koodi,
+joka tuottaa halutunlaisen tulostuksen.
+Kun painat nappia "Suorita", kone suorittaa koodisi ja
+ilmoittaa sen jälkeen, onko sen toiminta oikea.
+
+</p><p>
+
+</p><hr>
+
+<h3 class="task-title">
+Tehtävä 1
+<span id="solved2" class="unsolved">Ratkaisematon</span>
+</h3>
+<span id="loginError2" style="color: red;"></span>
+<script>
+if (!loggedIn) {
+    document.getElementById("loginError2").innerHTML = "<a style=\"color: red;\" href=\"/login/\">Kirjaudu sisään</a> ratkoaksesi tehtäviä.<br><br>";
+}
+</script>
+<script>
+identifier2 = "osa02_alku";
+$.ajax({
+     type: "POST",
+     url: "../result.php",
+     data: { task: identifier2 },
+     success: function(data){
+         let a = data.split("\n");
+         let result = ~~a[0];
+         a.shift();
+         let code = a.join("\n");
+         if (result == 1) {
+             let sol = document.getElementById("solved2");
+             sol.innerText = "Ratkaistu";
+             sol.className = "solved";
+         }
+         try {
+             let editor2 = ace.edit("editor2");
+             let isVariableProblem = null != document.getElementById("question2");
+             if (!isVariableProblem) {
+                 editor2.setValue(code);
+                 editor2.selection.clearSelection();
+             }
+         } catch (e) {}
+         try {
+             document.getElementById("condition2").value = code;
+         } catch (e) {}
+     }
+});
+</script>
+Tee ohjelma, joka tulostaa seuraavan rivin tekstiä:
+<p>
+</p><pre id="box3" class="example">Tästä alkaa ohjelmointi!</pre>
+<p> Kirjoita ohjelma tähän: </p><p></p><div id="editor2" class="editor ace_editor ace-github" style="font-size: 12pt; height: 62.75px;"><textarea class="ace_text-input" wrap="off" autocorrect="off" autocapitalize="off" spellcheck="false" style="opacity: 0; font-size: 1px; height: 1px; width: 1px; top: 31px; left: 162px;"></textarea><div class="ace_gutter" aria-hidden="true" style="left: 0px; width: 35px;"><div class="ace_layer ace_gutter-layer" style="height: 1e+06px; top: 0px; left: 0px; width: 35px;"><div class="ace_gutter-cell " style="height: 15.6875px; top: 0px;">1<span style="display: none;"></span></div><div class="ace_gutter-cell ace_gutter-active-line " style="height: 15.6875px; top: 15.6875px;">2<span style="display: none;"></span></div><div class="ace_gutter-cell " style="height: 15.6875px; top: 31.375px;">3<span style="display: none;"></span></div><div class="ace_gutter-cell " style="height: 15.6875px; top: 47.0625px;">4<span style="display: none;"></span></div></div></div><div class="ace_scroller" style="left: 35px; right: 0px; bottom: 0px;"><div class="ace_content" style="top: 0px; left: 0px; width: 583px; height: 94.125px;"><div class="ace_layer ace_print-margin-layer"><div class="ace_print-margin" style="left: 708px; visibility: hidden;"></div></div><div class="ace_layer ace_marker-layer"><div class="ace_bracket ace_start ace_br15" style="height: 15.6875px; width: 8.79688px; top: 15.6875px; left: 47.9844px;"></div></div><div class="ace_layer ace_text-layer" style="height: 1e+06px; margin: 0px 4px; top: 0px; left: 0px;"><div class="ace_line" style="height: 15.6875px; top: 0px;"><span class="ace_keyword">print</span><span class="ace_paren ace_lparen">(</span><span class="ace_string">"tästä"</span><span class="ace_paren ace_rparen">)</span></div><div class="ace_line" style="height: 15.6875px; top: 15.6875px;"><span class="ace_keyword">print</span><span class="ace_paren ace_lparen">(</span><span class="ace_string">"alkaa"</span><span class="ace_paren ace_rparen">)</span></div><div class="ace_line" style="height: 15.6875px; top: 31.375px;"></div><div class="ace_line" style="height: 15.6875px; top: 47.0625px;"><span class="ace_keyword">print</span><span class="ace_paren ace_lparen">(</span><span class="ace_string">"tästä alkaa ohjelmointi!"</span><span class="ace_paren ace_rparen">)</span></div></div><div class="ace_layer ace_marker-layer"></div><div class="ace_layer ace_cursor-layer ace_hidden-cursors"><div class="ace_cursor" style="display: block; top: 16px; left: 127px; width: 9px; height: 15.6875px; animation-duration: 1000ms;"></div></div></div></div><div class="ace_scrollbar ace_scrollbar-v" style="display: none; width: 20px; bottom: 0px;"><div class="ace_scrollbar-inner" style="width: 20px; height: 62.75px;"></div></div><div class="ace_scrollbar ace_scrollbar-h" style="display: none; height: 20px; left: 35px; right: 0px;"><div class="ace_scrollbar-inner" style="height: 20px; width: 583px;"></div></div><div style="height: auto; width: auto; top: 0px; left: 0px; visibility: hidden; position: absolute; white-space: pre; font: inherit; overflow: hidden;"><div style="height: auto; width: auto; top: 0px; left: 0px; visibility: hidden; position: absolute; white-space: pre; font: inherit; overflow: visible;">הההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההה</div><div style="height: auto; width: auto; top: 0px; left: 0px; visibility: hidden; position: absolute; white-space: pre; font-style: inherit; font-variant: inherit; font-stretch: inherit; font-size: inherit; line-height: inherit; font-family: inherit; font-optical-sizing: inherit; font-kerning: inherit; font-feature-settings: inherit; font-variation-settings: inherit; overflow: visible;">XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</div></div></div>
+<div><button onclick="runit(2)" id="run2" class="run">Suorita</button> <span id="verdict2" style="color: red;">Ratkaisusi on väärin!</span></div>
+<div class="console" id="console2"><span>tästä alkaa ohjelmointi!<br></span></div>
+<p>
+<script>
+var editor2 = ace.edit("editor2");
+editor2.setTheme("ace/theme/github");
+editor2.session.setMode("ace/mode/python");
+editor2.setOptions({maxLines: 14, fontSize: "12pt", highlightActiveLine:false, highlightSelectedWord:false, showLineNumbers:true, showFoldWidgets:false, displayIndentGuides:false, showGutter:true, behavioursEnabled:false, showPrintMargin:false});
+let callback2 = function (success) {
+    let res = 0;
+    if (success) {
+        res = 1;
+        let sol = document.getElementById("solved2");
+        sol.innerText = "Ratkaistu";
+        sol.className = "solved";
+    } else {
+        res = 0;
+    }
+    $.ajax({
+        type: "POST",
+        url: "../submit.php",
+        data: { task: identifier2, data: editor2.getValue(), result: res, course:"alkeet"},
+        success: function(data){
+        }
+    });
+}
+if (!loggedIn) {
+    document.getElementById("run2").disabled = true;
+    ace.edit("editor2").setOption("readOnly", true);
+    ace.edit("editor2").container.style.backgroundColor = "#F5F5F5";
+}
+</script>
+<script>
+grader2 = function() {
+output = document.getElementById("console2").innerText;
+correct = `
+Tästä alkaa ohjelmointi!
+`;
+return checkAnswer(output,correct);
+}
+</script>
+</p><hr>
+
+<h3 class="task-title">
+Tehtävä 2
+<span id="solved3" class="unsolved">Ratkaisematon</span>
+</h3>
+<span id="loginError3" style="color: red;"></span>
+<script>
+if (!loggedIn) {
+    document.getElementById("loginError3").innerHTML = "<a style=\"color: red;\" href=\"/login/\">Kirjaudu sisään</a> ratkoaksesi tehtäviä.<br><br>";
+}
+</script>
+<script>
+identifier3 = "osa02_tulo";
+$.ajax({
+     type: "POST",
+     url: "../result.php",
+     data: { task: identifier3 },
+     success: function(data){
+         let a = data.split("\n");
+         let result = ~~a[0];
+         a.shift();
+         let code = a.join("\n");
+         if (result == 1) {
+             let sol = document.getElementById("solved3");
+             sol.innerText = "Ratkaistu";
+             sol.className = "solved";
+         }
+         try {
+             let editor3 = ace.edit("editor3");
+             let isVariableProblem = null != document.getElementById("question3");
+             if (!isVariableProblem) {
+                 editor3.setValue(code);
+                 editor3.selection.clearSelection();
+             }
+         } catch (e) {}
+         try {
+             document.getElementById("condition3").value = code;
+         } catch (e) {}
+     }
+});
+</script>
+Tee ohjelma, joka tulostaa laskun 123456789*987654321 vastauksen.
+<p> Kirjoita ohjelma tähän: </p><p></p><div id="editor3" class="editor ace_editor ace-github" style="font-size: 12pt; height: 15.6875px;"><textarea class="ace_text-input" wrap="off" autocorrect="off" autocapitalize="off" spellcheck="false" style="opacity: 0; font-size: 1px; height: 1px; width: 1px; top: 15px; left: 39px;"></textarea><div class="ace_gutter" aria-hidden="true" style="left: 0px; width: 35px;"><div class="ace_layer ace_gutter-layer" style="height: 1e+06px; top: 0px; left: 0px; width: 35px;"><div class="ace_gutter-cell ace_gutter-active-line " style="height: 15.6875px; top: 0px;">1<span style="display: none;"></span></div></div></div><div class="ace_scroller" style="left: 35px; right: 0px; bottom: 0px;"><div class="ace_content" style="top: 0px; left: 0px; width: 583px; height: 47.0625px;"><div class="ace_layer ace_print-margin-layer"><div class="ace_print-margin" style="left: 708px; visibility: hidden;"></div></div><div class="ace_layer ace_marker-layer"></div><div class="ace_layer ace_text-layer" style="height: 1e+06px; margin: 0px 4px; top: 0px; left: 0px;"><div class="ace_line" style="height: 15.6875px; top: 0px;"></div></div><div class="ace_layer ace_marker-layer"></div><div class="ace_layer ace_cursor-layer ace_hidden-cursors"><div class="ace_cursor" style="display: block; top: 0px; left: 4px; width: 9px; height: 15.6875px;"></div></div></div></div><div class="ace_scrollbar ace_scrollbar-v" style="display: none; width: 20px; bottom: 0px;"><div class="ace_scrollbar-inner" style="width: 20px; height: 15.6875px;"></div></div><div class="ace_scrollbar ace_scrollbar-h" style="display: none; height: 20px; left: 35px; right: 0px;"><div class="ace_scrollbar-inner" style="height: 20px; width: 583px;"></div></div><div style="height: auto; width: auto; top: 0px; left: 0px; visibility: hidden; position: absolute; white-space: pre; font: inherit; overflow: hidden;"><div style="height: auto; width: auto; top: 0px; left: 0px; visibility: hidden; position: absolute; white-space: pre; font: inherit; overflow: visible;">הההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההה</div><div style="height: auto; width: auto; top: 0px; left: 0px; visibility: hidden; position: absolute; white-space: pre; font-style: inherit; font-variant: inherit; font-stretch: inherit; font-size: inherit; line-height: inherit; font-family: inherit; font-optical-sizing: inherit; font-kerning: inherit; font-feature-settings: inherit; font-variation-settings: inherit; overflow: visible;">XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</div></div></div>
+<div><button onclick="runit(3)" id="run3" class="run">Suorita</button> <span id="verdict3"></span></div>
+<div class="console" id="console3"></div>
+<p>
+<script>
+var editor3 = ace.edit("editor3");
+editor3.setTheme("ace/theme/github");
+editor3.session.setMode("ace/mode/python");
+editor3.setOptions({maxLines: 14, fontSize: "12pt", highlightActiveLine:false, highlightSelectedWord:false, showLineNumbers:true, showFoldWidgets:false, displayIndentGuides:false, showGutter:true, behavioursEnabled:false, showPrintMargin:false});
+let callback3 = function (success) {
+    let res = 0;
+    if (success) {
+        res = 1;
+        let sol = document.getElementById("solved3");
+        sol.innerText = "Ratkaistu";
+        sol.className = "solved";
+    } else {
+        res = 0;
+    }
+    $.ajax({
+        type: "POST",
+        url: "../submit.php",
+        data: { task: identifier3, data: editor3.getValue(), result: res, course:"alkeet"},
+        success: function(data){
+        }
+    });
+}
+if (!loggedIn) {
+    document.getElementById("run3").disabled = true;
+    ace.edit("editor3").setOption("readOnly", true);
+    ace.edit("editor3").container.style.backgroundColor = "#F5F5F5";
+}
+</script>
+<script>
+grader3 = function() {
+output = document.getElementById("console3").innerText;
+correct = `
+121932631112635269
+`;
+return checkAnswer(output,correct);
+}
+</script>
+</p><hr>
+
+<h3 class="task-title">
+Tehtävä 3
+<span id="solved4" class="unsolved">Ratkaisematon</span>
+</h3>
+<span id="loginError4" style="color: red;"></span>
+<script>
+if (!loggedIn) {
+    document.getElementById("loginError4").innerHTML = "<a style=\"color: red;\" href=\"/login/\">Kirjaudu sisään</a> ratkoaksesi tehtäviä.<br><br>";
+}
+</script>
+<script>
+identifier4 = "osa02_laatikko";
+$.ajax({
+     type: "POST",
+     url: "../result.php",
+     data: { task: identifier4 },
+     success: function(data){
+         let a = data.split("\n");
+         let result = ~~a[0];
+         a.shift();
+         let code = a.join("\n");
+         if (result == 1) {
+             let sol = document.getElementById("solved4");
+             sol.innerText = "Ratkaistu";
+             sol.className = "solved";
+         }
+         try {
+             let editor4 = ace.edit("editor4");
+             let isVariableProblem = null != document.getElementById("question4");
+             if (!isVariableProblem) {
+                 editor4.setValue(code);
+                 editor4.selection.clearSelection();
+             }
+         } catch (e) {}
+         try {
+             document.getElementById("condition4").value = code;
+         } catch (e) {}
+     }
+});
+</script>
+Tee ohjelma, jonka tulostus on seuraava:
+<p>
+</p><pre id="box4" class="example"><i><span style="color: #9a9a9a;">#####
+</span></i><i><span style="color: #9a9a9a;">#   #
+</span></i><i><span style="color: #9a9a9a;">#   #
+</span></i><i><span style="color: #9a9a9a;">#   #
+</span></i><i><span style="color: #9a9a9a;">#####</span></i></pre>
+<p> Kirjoita ohjelma tähän: </p><p></p><div id="editor4" class="editor ace_editor ace-github" style="font-size: 12pt; height: 15.6875px;"><textarea class="ace_text-input" wrap="off" autocorrect="off" autocapitalize="off" spellcheck="false" style="opacity: 0; font-size: 1px; height: 1px; width: 1px; top: 15px; left: 39px;"></textarea><div class="ace_gutter" aria-hidden="true" style="left: 0px; width: 35px;"><div class="ace_layer ace_gutter-layer" style="height: 1e+06px; top: 0px; left: 0px; width: 35px;"><div class="ace_gutter-cell ace_gutter-active-line " style="height: 15.6875px; top: 0px;">1<span style="display: none;"></span></div></div></div><div class="ace_scroller" style="left: 35px; right: 0px; bottom: 0px;"><div class="ace_content" style="top: 0px; left: 0px; width: 583px; height: 47.0625px;"><div class="ace_layer ace_print-margin-layer"><div class="ace_print-margin" style="left: 708px; visibility: hidden;"></div></div><div class="ace_layer ace_marker-layer"></div><div class="ace_layer ace_text-layer" style="height: 1e+06px; margin: 0px 4px; top: 0px; left: 0px;"><div class="ace_line" style="height: 15.6875px; top: 0px;"></div></div><div class="ace_layer ace_marker-layer"></div><div class="ace_layer ace_cursor-layer ace_hidden-cursors"><div class="ace_cursor" style="display: block; top: 0px; left: 4px; width: 9px; height: 15.6875px;"></div></div></div></div><div class="ace_scrollbar ace_scrollbar-v" style="display: none; width: 20px; bottom: 0px;"><div class="ace_scrollbar-inner" style="width: 20px; height: 15.6875px;"></div></div><div class="ace_scrollbar ace_scrollbar-h" style="display: none; height: 20px; left: 35px; right: 0px;"><div class="ace_scrollbar-inner" style="height: 20px; width: 583px;"></div></div><div style="height: auto; width: auto; top: 0px; left: 0px; visibility: hidden; position: absolute; white-space: pre; font: inherit; overflow: hidden;"><div style="height: auto; width: auto; top: 0px; left: 0px; visibility: hidden; position: absolute; white-space: pre; font: inherit; overflow: visible;">הההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההה</div><div style="height: auto; width: auto; top: 0px; left: 0px; visibility: hidden; position: absolute; white-space: pre; font-style: inherit; font-variant: inherit; font-stretch: inherit; font-size: inherit; line-height: inherit; font-family: inherit; font-optical-sizing: inherit; font-kerning: inherit; font-feature-settings: inherit; font-variation-settings: inherit; overflow: visible;">XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</div></div></div>
+<div><button onclick="runit(4)" id="run4" class="run">Suorita</button> <span id="verdict4"></span></div>
+<div class="console" id="console4"></div>
+<p>
+<script>
+var editor4 = ace.edit("editor4");
+editor4.setTheme("ace/theme/github");
+editor4.session.setMode("ace/mode/python");
+editor4.setOptions({maxLines: 14, fontSize: "12pt", highlightActiveLine:false, highlightSelectedWord:false, showLineNumbers:true, showFoldWidgets:false, displayIndentGuides:false, showGutter:true, behavioursEnabled:false, showPrintMargin:false});
+let callback4 = function (success) {
+    let res = 0;
+    if (success) {
+        res = 1;
+        let sol = document.getElementById("solved4");
+        sol.innerText = "Ratkaistu";
+        sol.className = "solved";
+    } else {
+        res = 0;
+    }
+    $.ajax({
+        type: "POST",
+        url: "../submit.php",
+        data: { task: identifier4, data: editor4.getValue(), result: res, course:"alkeet"},
+        success: function(data){
+        }
+    });
+}
+if (!loggedIn) {
+    document.getElementById("run4").disabled = true;
+    ace.edit("editor4").setOption("readOnly", true);
+    ace.edit("editor4").container.style.backgroundColor = "#F5F5F5";
+}
+</script>
+<script>
+grader4 = function() {
+output = document.getElementById("console4").innerText;
+correct = `
+#####
+#   #
+#   #
+#   #
+#####
+`;
+return checkAnswer(output,correct);
+}
+</script>
+</p><hr>
+
+<h3 class="task-title">
+Tehtävä 4
+<span id="solved5" class="unsolved">Ratkaisematon</span>
+</h3>
+<span id="loginError5" style="color: red;"></span>
+<script>
+if (!loggedIn) {
+    document.getElementById("loginError5").innerHTML = "<a style=\"color: red;\" href=\"/login/\">Kirjaudu sisään</a> ratkoaksesi tehtäviä.<br><br>";
+}
+</script>
+<script>
+identifier5 = "osa02_kuusi";
+$.ajax({
+     type: "POST",
+     url: "../result.php",
+     data: { task: identifier5 },
+     success: function(data){
+         let a = data.split("\n");
+         let result = ~~a[0];
+         a.shift();
+         let code = a.join("\n");
+         if (result == 1) {
+             let sol = document.getElementById("solved5");
+             sol.innerText = "Ratkaistu";
+             sol.className = "solved";
+         }
+         try {
+             let editor5 = ace.edit("editor5");
+             let isVariableProblem = null != document.getElementById("question5");
+             if (!isVariableProblem) {
+                 editor5.setValue(code);
+                 editor5.selection.clearSelection();
+             }
+         } catch (e) {}
+         try {
+             document.getElementById("condition5").value = code;
+         } catch (e) {}
+     }
+});
+</script>
+Tee ohjelma, jonka tulostus on seuraava:
+<p>
+</p><pre id="box5" class="example">   *
+  ***
+ *****
+*******
+   *</pre>
+<p> Kirjoita ohjelma tähän: </p><p></p><div id="editor5" class="editor ace_editor ace-github" style="font-size: 12pt; height: 15.6875px;"><textarea class="ace_text-input" wrap="off" autocorrect="off" autocapitalize="off" spellcheck="false" style="opacity: 0; font-size: 1px; height: 1px; width: 1px; top: 15px; left: 39px;"></textarea><div class="ace_gutter" aria-hidden="true" style="left: 0px; width: 35px;"><div class="ace_layer ace_gutter-layer" style="height: 1e+06px; top: 0px; left: 0px; width: 35px;"><div class="ace_gutter-cell ace_gutter-active-line " style="height: 15.6875px; top: 0px;">1<span style="display: none;"></span></div></div></div><div class="ace_scroller" style="left: 35px; right: 0px; bottom: 0px;"><div class="ace_content" style="top: 0px; left: 0px; width: 583px; height: 47.0625px;"><div class="ace_layer ace_print-margin-layer"><div class="ace_print-margin" style="left: 708px; visibility: hidden;"></div></div><div class="ace_layer ace_marker-layer"></div><div class="ace_layer ace_text-layer" style="height: 1e+06px; margin: 0px 4px; top: 0px; left: 0px;"><div class="ace_line" style="height: 15.6875px; top: 0px;"></div></div><div class="ace_layer ace_marker-layer"></div><div class="ace_layer ace_cursor-layer ace_hidden-cursors"><div class="ace_cursor" style="display: block; top: 0px; left: 4px; width: 9px; height: 15.6875px;"></div></div></div></div><div class="ace_scrollbar ace_scrollbar-v" style="display: none; width: 20px; bottom: 0px;"><div class="ace_scrollbar-inner" style="width: 20px; height: 15.6875px;"></div></div><div class="ace_scrollbar ace_scrollbar-h" style="display: none; height: 20px; left: 35px; right: 0px;"><div class="ace_scrollbar-inner" style="height: 20px; width: 583px;"></div></div><div style="height: auto; width: auto; top: 0px; left: 0px; visibility: hidden; position: absolute; white-space: pre; font: inherit; overflow: hidden;"><div style="height: auto; width: auto; top: 0px; left: 0px; visibility: hidden; position: absolute; white-space: pre; font: inherit; overflow: visible;">הההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההההה</div><div style="height: auto; width: auto; top: 0px; left: 0px; visibility: hidden; position: absolute; white-space: pre; font-style: inherit; font-variant: inherit; font-stretch: inherit; font-size: inherit; line-height: inherit; font-family: inherit; font-optical-sizing: inherit; font-kerning: inherit; font-feature-settings: inherit; font-variation-settings: inherit; overflow: visible;">XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</div></div></div>
+<div><button onclick="runit(5)" id="run5" class="run">Suorita</button> <span id="verdict5"></span></div>
+<div class="console" id="console5"></div>
+<p>
+<script>
+var editor5 = ace.edit("editor5");
+editor5.setTheme("ace/theme/github");
+editor5.session.setMode("ace/mode/python");
+editor5.setOptions({maxLines: 14, fontSize: "12pt", highlightActiveLine:false, highlightSelectedWord:false, showLineNumbers:true, showFoldWidgets:false, displayIndentGuides:false, showGutter:true, behavioursEnabled:false, showPrintMargin:false});
+let callback5 = function (success) {
+    let res = 0;
+    if (success) {
+        res = 1;
+        let sol = document.getElementById("solved5");
+        sol.innerText = "Ratkaistu";
+        sol.className = "solved";
+    } else {
+        res = 0;
+    }
+    $.ajax({
+        type: "POST",
+        url: "../submit.php",
+        data: { task: identifier5, data: editor5.getValue(), result: res, course:"alkeet"},
+        success: function(data){
+        }
+    });
+}
+if (!loggedIn) {
+    document.getElementById("run5").disabled = true;
+    ace.edit("editor5").setOption("readOnly", true);
+    ace.edit("editor5").container.style.backgroundColor = "#F5F5F5";
+}
+</script>
+<script>
+grader5 = function() {
+output = document.getElementById("console5").innerText;
+correct = `
+   *
+  ***
+ *****
+*******
+   *
+`;
+return checkAnswer(output,correct);
+}
+</script>
+</p><hr>
+<div style="display: none;" id="modelbackground">
+    <div id="modelcontainer">
+        <h3 style="position: absolute; margin-top: 0px; float: left;">Malliratkaisu</h3>
+        <big id="modelclose" style="cursor: pointer;" onclick="document.getElementById(&#39;modelbackground&#39;).style.display=&#39;none&#39;">X</big>
+        <br>
+        <br>
+        <div id="editormodel" class="editor ace_editor ace-github" style="font-size: 12pt;"><textarea class="ace_text-input" wrap="off" autocorrect="off" autocapitalize="off" spellcheck="false" style="opacity: 0; font-size: 1px;"></textarea><div class="ace_gutter" aria-hidden="true"><div class="ace_layer ace_gutter-layer" style="height: 1e+06px;"></div></div><div class="ace_scroller"><div class="ace_content"><div class="ace_layer ace_print-margin-layer"><div class="ace_print-margin" style="left: 4px; visibility: hidden;"></div></div><div class="ace_layer ace_marker-layer"></div><div class="ace_layer ace_text-layer" style="height: 1e+06px; margin: 0px 4px;"></div><div class="ace_layer ace_marker-layer"></div><div class="ace_layer ace_cursor-layer ace_hidden-cursors"><div class="ace_cursor"></div></div></div></div><div class="ace_scrollbar ace_scrollbar-v" style="display: none; width: 20px;"><div class="ace_scrollbar-inner" style="width: 20px;"></div></div><div class="ace_scrollbar ace_scrollbar-h" style="display: none; height: 20px;"><div class="ace_scrollbar-inner" style="height: 20px;"></div></div><div style="height: auto; width: auto; top: 0px; left: 0px; visibility: hidden; position: absolute; white-space: pre; font: inherit; overflow: hidden;"><div style="height: auto; width: auto; top: 0px; left: 0px; visibility: hidden; position: absolute; white-space: pre; font: inherit; overflow: visible;"></div><div style="height: auto; width: auto; top: 0px; left: 0px; visibility: hidden; position: absolute; white-space: pre; font: inherit; overflow: visible;">XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</div></div></div>
+        <div><button onclick="runit(&#39;model&#39;)" id="runmodel" class="run">Suorita</button> <span id="verdictmodel"></span></div>
+        <div class="console" id="consolemodel"></div>
+        <p>
+        <script>
+        var editormodel = ace.edit("editormodel");
+        editormodel.setTheme("ace/theme/github");
+        editormodel.session.setMode("ace/mode/python");
+        editormodel.setOptions({maxLines: 14, fontSize: "12pt", highlightActiveLine:false, highlightSelectedWord:false, showLineNumbers:true, showFoldWidgets:false, displayIndentGuides:false, showGutter:true, behavioursEnabled:false, showPrintMargin:false});
+        if (!loggedIn) {
+            document.getElementById("runmodel").disabled = true;
+            ace.edit("editormodel").setOption("readOnly", true);
+            ace.edit("editormodel").container.style.backgroundColor = "#F5F5F5";
+        }
+        </script>
+    </p></div>
+</div>
+
+</div>
+
+<div class="bottom-nav course-nav nav">
+<a class="prev-chapter" href="https://koodariksi.fi/alkeet/1">← Edellinen luku</a><a class="next-chapter" href="https://koodariksi.fi/alkeet/3">Seuraava luku →</a></div>
+
+<!--<style>
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:700");
+
+.dt-ad {
+    background-image: url('/dt.png');
+    padding-top: 24px;
+    padding-bottom: 24px;
+    box-shadow: none;
+    border-bottom: none;
+    border-top: 1px solid black;
+    text-decoration: none;
+}
+.dt-ad > h4 {
+    position:relative;
+}
+.dt-ad > h4:before {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(118, 95, 255);
+    mix-blend-mode: luminosity;
+    opacity: 0.54;
+}
+.dt-ad span {
+    position: relative;
+    z-index: 2;
+    font-family: "Open Sans";
+    font-style: normal;
+    text-shadow: 0 0 2px rgba(0,0,0,50%);
+}
+</style>
+<a href="https://datatahti.fi/" class="system-nav white-info dt-ad">
+    <h4>
+        <span>Datatähti 2023 &ndash; peruskoulun ja lukion ohjelmointikilpailu käynnissä 31.10.–13.11.2022</span>
+    </h4>
+</a>-->
+
+
+
+</div></body></html>
