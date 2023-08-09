@@ -1,0 +1,70 @@
+body {
+    font-family:cursive;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color:cadetblue;
+
+    color: rgb(0, 0, 0);
+    letter-spacing: 2px;
+
+}
+
+#score {
+    font-size: 2rem;
+    font-family: cursive;
+    margin: 1rem 0;
+}
+
+button {
+    font-family: cursive;
+    border-radius: 5px;
+    border: none;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    cursor:crosshair;
+    background-color: aliceblue;
+
+}
+
+button:hover {
+    border: 2px solid black;
+}
+
+ul {
+    display: grid;
+    grid-template-columns:  repeat(4, 100px);
+    grid-template-rows: repeat(4, 100px);
+    gap: 10px;
+    padding: 0;
+
+}
+
+li {
+    list-style: none;
+    border: 2px solid rgb(2, 0, 36);
+    border-radius: 10px;
+    cursor:cell;
+}
+
+.shake {
+    animation: shake 0.1s;
+}
+
+.pop {
+    animation: pop 0.5s;
+}
+
+@keyframes shake {
+    0% {transform: rotate(0deg);}
+    25% {transform: rotate(-3deg)}
+    50% {transform: rotate(0deg)}
+    75% {transform: rotate(3deg)}
+    100% {transform: rotate(0deg)}
+}
+@keyframes pop {
+    0% {transform: scale(1);}
+    50% {transform: scale(1.06);}
+    100% {transform: scale(1);}
+}
