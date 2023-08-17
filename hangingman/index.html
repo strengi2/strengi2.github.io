@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+
+<html lang="fin">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hangman Game JavaScript | CodingNepal</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="scripts/sanat.js" defer></script>
+    <script src="scripts/script.js" defer></script>
+</head>
+<body>
+    <div class="game-modal">
+        <div class="content">
+            <img src="#" alt="gif">
+            <h4>Hävisit!</h4>
+            <p>oikea sana olisi ollut <b>o</b></p>
+            <button class="play-again">Pelaa uudelleen</button>
+        </div>
+    </div>
+    <div class="container">
+        <div class="hangman-box">
+            <img src="#" draggable="false" alt="hangman-img">
+            <h1>Keksi oikea sana</h1>
+        </div>
+        <div class="game-box">
+            <ul class="word-display"></ul>
+            <h4 class="hint-text">apu: <b></b></h4>
+            <h4 class="guesses-text">Vääriä vastauksia: <b></b></h4>
+            <div class="keyboard"></div>
+        </div>
+    </div>
+
+    <div>
+        <div class="wave"></div>
+        <div class="wave"></div>
+        <div class="wave"></div>
+     </div>
+    
+</body>
+</html>
