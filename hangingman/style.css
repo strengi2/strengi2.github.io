@@ -84,7 +84,8 @@ body {
     font-weight: 600;
     border-radius: 4px;
     text-transform: uppercase;
-    background: #5E63BA;
+    background: #ba5e75;
+    font-family: 'Courier New', Courier, monospace;
 }
 .keyboard button {
     padding: 7px;
