@@ -47,13 +47,13 @@ ul {
 li {
     list-style: none;
     border: 3px solid rgb(2, 0, 36);
-    border-radius: 100px;
+    border-radius: 20px;
     cursor:cell;
     
 }
 
 .shake {
-    animation: shake 0.1s;
+    animation: shake 0.2s;
 }
 
 .pop {
